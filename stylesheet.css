@@ -14,8 +14,8 @@ html body{
     padding: 0px; 
     box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.4); 
     min-height: 1200px; 
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
 }
 
 .navbar{
@@ -93,16 +93,10 @@ html body{
 /* HOME PAGE SECTION */
 
 .grid-image{
-    border-radius: 10px;
     transition: 0.2s ease-in-out;
     width: 100%;
     height: 100%;
     animation: blink 4s infinite;
-}
-
-.grid-image:hover{
-    transform: scale(1.05);
-    transition: 0.2s ease-in-out;
 }
 
 .grid{
@@ -112,9 +106,9 @@ html body{
     position: relative;
     top: 6vh;
     left: 17%;
-    gap: 10px;
+    gap: 5px;
     width: 800px;
-    height: 515px;
+    height: 500px;
     grid-template-areas: 
     "I1 I2 I5"
     "I3 I4 I5";
@@ -173,6 +167,51 @@ html body{
     animation: blink 4.6s infinite;
 }
 
+.web_title{
+    position: absolute;
+    color: #fff;
+    top: 35%;
+    left: 40%;
+    font-family: "Lato", sans-serif;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px blue;
+    transform: scale(1.3);
+}
+
+.web_title .the{
+    position: relative;
+    top: 25px;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+
+.web_title h1{
+    font-size: 52px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.web_title h2{
+    position: relative;
+    top: -25px;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(255, 242, 0);
+}
+
+.caption{
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+    width: 50%;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(0, 200, 255);
+    transform: scale(1.3);
+}
 
 
 
