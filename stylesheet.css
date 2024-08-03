@@ -112,7 +112,7 @@ html body{
     position: relative;
     top: 6vh;
     left: 17%;
-    gap: 7px;
+    gap: 12px;
     width: 800px;
     height: 515px;
     grid-template-areas: 
