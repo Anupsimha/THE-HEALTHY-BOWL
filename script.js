@@ -92,4 +92,37 @@ function changeBackground7() {
 setInterval(changeBackground7, 6000);
 changeBackground7();
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const text = "Discover, Share, and Savor Deliciously Healthy, Quick, Nutritious Recipes";
+const speed = 12; // Typing speed in milliseconds
+const typedText = document.getElementById("captionid");
+
+let index = 0;
+let isBlinking = true;
+
+function typeWriter() {
+    if (index < text.length) {
+        typedText.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, speed);
+    } else {
+        const intervalid = setInterval(() => {
+            if (isBlinking)  {
+                typedText.style.visibility = typedText.style.visibility === 'hidden' ? 'visible' : 'hidden';
+            } 
+            else {
+                typedText.style.visibility = 'visible';
+            }
+        }, 300);
+
+        setTimeout(() => {
+            clearInterval(intervalid);
+            console.log("Interval stopped.");
+        }, 1800);
+    }
+}
+
+typeWriter();
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
