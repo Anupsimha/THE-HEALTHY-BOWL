@@ -222,7 +222,6 @@ html body{
     width: 90%;
     padding-bottom: 15px;
     overflow-x: auto;
-    white-space: nowrap; 
 }
 
 .cake_recipes{
@@ -316,9 +315,48 @@ html body{
     text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
 }
 
+.fruit_salad{
+    height: 170px;
+    width: 200px;
+    background: url(./images/winter_skin_care.jpg);
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.fruit_salad p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}   
+
+.vegetable_salad{
+    height: 170px;
+    width: 200px;
+    background: url(./images/winter_skin_care.jpg);
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.vegetable_salad p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
 .highlights > *{
     border-radius: 10px;
     transition: 0.3s ease-in-out;
+    margin-right: 80px;
+    flex: 0 0 auto;
+    width: 240px;
 }
 
 .highlights > *:hover{
@@ -328,8 +366,8 @@ html body{
 /* Scroll Bar Designing */
 
 ::-webkit-scrollbar {
-    width: 15px; /* Width of the scrollbar */
-    height: 15px; /* Height of the scrollbar for horizontal scrollbars */
+    width: 8px; /* Width of the scrollbar */
+    height: 5px; /* Height of the scrollbar for horizontal scrollbars */
   }
   
   /* Style the scrollbar track (part that is not draggable) */
