@@ -21,9 +21,14 @@ html body{
 .navbar{
     width: 100%;
     height: 14vh;
-    position: relative;
-    z-index: 1;
+    position: sticky;
+    background-color: rgb(22, 22, 22);
+    top: 0; /* Sticks the navbar to the top of the viewport */
+    left: 0;
+    width: 100%; /* Make sure it stretches across the width of the viewport */
+    z-index: 1000; 
     overflow: hidden;
+    margin-bottom: -3px;
 }
 
 
@@ -318,7 +323,7 @@ html body{
 .fruit_salad{
     height: 170px;
     width: 200px;
-    background: url(./images/winter_skin_care.jpg);
+    background: url(./images/fruit_salad.jpg);
     background-size: cover;
     transform: rotate(-4deg);
     transition: 0.2s ease-in-out;
@@ -336,7 +341,7 @@ html body{
 .vegetable_salad{
     height: 170px;
     width: 200px;
-    background: url(./images/winter_skin_care.jpg);
+    background: url(./images/vegetable_salad.jpeg);     
     background-size: cover;
     transform: rotate(-4deg);
     transition: 0.2s ease-in-out;
@@ -351,12 +356,82 @@ html body{
     text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
 }
 
+.deserts{
+    height: 170px;
+    width: 200px;
+    background: url(./images/deserts.jpg);     
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.deserts p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
+.fast_foods{
+    height: 170px;
+    width: 200px;
+    background: url(./images/fast_foods.jpg!w700wp);     
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.fast_foods p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
+.chats{
+    height: 170px;
+    width: 200px;
+    background: url(./images/indian_chats.jpg);     
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.chats p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
+.find_some{
+    font-family: "Kalam", cursive;
+    font-size: 24px;
+    font-weight: bolder;
+    background: url(./images/findSomeMore.jpg);
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the last value for transparency */
+    background-blend-mode: overlay; /* This blends the color with the image */
+    color: #000000;
+    outline: 2px solid #fff;
+}
+
+.find_some:hover{
+    background-color: rgba(255, 255, 255,0.2);
+}
+
 .highlights > *{
     border-radius: 10px;
     transition: 0.3s ease-in-out;
-    margin-right: 80px;
+    margin-right: 60px;
     flex: 0 0 auto;
     width: 240px;
+    outline: 2px solid #fff;
 }
 
 .highlights > *:hover{
@@ -366,21 +441,21 @@ html body{
 /* Scroll Bar Designing */
 
 ::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
+    width: 12px; /* Width of the scrollbar */
     height: 5px; /* Height of the scrollbar for horizontal scrollbars */
   }
   
-  /* Style the scrollbar track (part that is not draggable) */
+  /* Style the scrollbar track (part that is not draggable)
   ::-webkit-scrollbar-track {
-    background: #2e2e2e; /* Track color */
+    background: #2e2e2e; Track color
     border-radius: 5px;
   }
   
   /* Style the scrollbar thumb (draggable part) */
-  ::-webkit-scrollbar-thumb {
-    background: #000000; /* Thumb color */
-    border-radius: 5px; /* Rounded corners */
-  }
+  /* ::-webkit-scrollbar-thumb {
+    background: #000000; Thumb color
+    border-radius: 5px; Rounded corners
+  } */ 
   
   /* Style the scrollbar thumb on hover */
   ::-webkit-scrollbar-thumb:hover {
