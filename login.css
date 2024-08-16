@@ -3,6 +3,23 @@
     padding: 0px;
 }
 .main{
+    padding: 10%;
     display: grid;
-    justify-content: center;
+    justify-content: center; 
+    position: relative;
+}
+.container{
+    width: 20vw;
+    padding: 10%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.refrence{
+    display: flex;
+    gap: 3vw;
+    padding-bottom: 10px;
+}
+.refrence a{
+    text-decoration: none;
+    font-size: 2em;
 }
