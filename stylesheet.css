@@ -154,7 +154,7 @@ html body{
     top: 6vh;
     left: 23%;
     gap: 5px;
-    width: 800px;
+    width: 55vw;
     height: 500px;
     grid-template-areas: 
     "I1 I2 I5 I6"
@@ -163,46 +163,46 @@ html body{
 
 .item1{
     height: 200px;
-    width: 200px;
+    width: 13.889vw;
     grid-area: I1;
 }
 
 .item2{
     height: 200px;
-    width: 300px;
+    width: 20.834vw;
     grid-area: I2;
 }
 
 .item3{
     height: 300px;
-    width: 200px;
+    width: 13.889vw;
     grid-area: I3;
     
 }
 
 .item4{
     height: 300px;
-    width: 300px;
+    width: 20.834vw;
     grid-area: I4;
     
 }
 
 .item5{
     height: 100%;
-    width: 300px;
+    width: 20.834vw;
     grid-area: I5;
     
 }
 
 .item6{
     height: 200px;
-    width: 300px;
+    width: 20.834vw;
     grid-area: I6;
 }
 
 .item7{
     height: 100%;
-    width: 300px;
+    width: 20.834vw;
     grid-area: I7;
 }
 

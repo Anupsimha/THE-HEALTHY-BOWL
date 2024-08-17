@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url(./images/login\ page\ bg.jpg);
+}
+.main{
+    padding: 10%;
+    display: grid;
+    justify-content: center;  
+    position: relative;
+}
+.container{
+    width: 20vw;
+    padding: 10%;
+    background: black;
+    opacity: 50%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: -2.5vw;
+}
+.refrence{
+    display: flex;
+    gap: 3vw;
+    padding-bottom: 10px;
+}
+.refrence a{
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding-bottom: 5px;
+}
+.input{
+    margin-top: 20px;
+    padding: 5px;
+}
+.input input{
+    border-bottom: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    width: 100%;
+    outline: none;
+    margin-bottom: 35px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.input input::placeholder{
+    font-size: 1vw;
+    color: white;
+    font-weight: bold;
+}
+.check-box{
+    margin-top: 10px;
+}
+.check-box label {
+    font-size: 1.1vw;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.check-box input{
+    width: 1.1vw;
+    height: 15px;
+    border: none;
+}
+.check-box a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1vw;
+    color: blueviolet;
+    margin-left: 4vw;
+}
+.btn{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    height: 40px;
+    width: 12vw;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 60px;
+    font-weight: lighter;
+    font-size: 1.5vw;
+}
+.first-logo{
+    transform: rotate(-45deg);
+
+}
