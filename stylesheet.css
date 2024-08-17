@@ -577,6 +577,119 @@ html body{
     right: 12px;
 }
 
+/* ADD YOUR RECIPE SECTION */
+
+.add_your_recipe{
+    color: #fff;
+    font-weight: 100;
+    height: 550px;
+    width: 90%;
+    position: relative;
+    top: 700px;
+    left: 0vw;
+    margin: 0px auto;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 0.8;
+}
+
+.add_your_recipe h2{
+    font-size: 42px;
+}
+
+.uploading_recipe_section{
+    height: 400px;
+    width: 80%;
+    position: relative;
+    top: 20px;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+.upload-section {
+    background: url(./images/upload_recipe_section.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80%;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    border: 2px solid #fff;
+    outline: 5px solid black;
+}
+
+.upload-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the RGBA value to control the transparency */
+    z-index: 0;
+}
+
+.upload-section * {
+    position: relative;
+    z-index: 1;
+    top: 8.5%;
+    left: -10%;
+    line-height: 1.1;
+}
+
+.upload-section h2 {
+    color: #000000;
+}
+
+.upload-label {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.upload-label:hover{
+    background-color: #014a99;
+}
+
+.upload-label i {
+    margin-right: 8px;
+}
+
+#image-upload {
+    display: none;
+}
+
+.upload-btn {
+    display: block;
+    background-color: #28A745;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    left: 28%;
+}
+
+.upload-btn:hover {
+    background-color: #218838;
+}
+
+
 
 
 
