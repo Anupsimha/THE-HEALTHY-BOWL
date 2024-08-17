@@ -129,7 +129,7 @@ html body{
     color: #fff;
     background: rgba(182, 92, 212, 0.8);
     font-weight: 600;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .log_in:hover{
@@ -556,7 +556,7 @@ html body{
 
 .name_of_dish{
     position: relative;
-    right: 75px;
+    left: -20px;
     top: -17px;
     font-size: 26px;
 }
