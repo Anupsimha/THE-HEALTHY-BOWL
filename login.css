@@ -3,7 +3,11 @@
     padding: 0px;
 }
 body{
-    background: url(./images/login\ page\ bg.jpg);
+    background: url(./images/login\ page\ background.png);
+    background-attachment: fixed;
+    width: 1920px;
+    height: 1440px;
+    background-repeat: no-repeat;
 }
 .main{
     padding: 10%;
