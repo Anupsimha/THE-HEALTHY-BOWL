@@ -698,18 +698,42 @@ html body{
     top: 10%;
     right: 5%;
     z-index: 50;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     border: 2px solid #fff;
-    outline: 5px solid rgba(255, 0, 0, 0.7);
+    border-left: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    transition: 0.5s ease-in-out;
 }
 
-.details_of_uploader input{
+.details_of_uploader:hover{
+    outline: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px 2px rgb(59, 59, 59);
+}
+
+.details{
+    position: relative;
+    top: 15%;
+    left: 10%;
+    width: 75%;
+    height: 70%; 
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    overflow: visible;
+    
+}
+
+.details input::placeholder{
     border-bottom: 2px solid rgb(0, 0, 0);
     border-top: none;
     border-left: none;
     border-right: none;
-    font-size: 15px;
     letter-spacing: 1px;
+    font-family: "Kalam", cursive;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 
