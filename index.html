@@ -293,22 +293,18 @@
                 <div class="details_of_uploader">
                     <form action="/submit-form" method="POST" class="form_of_recipe">
                         <!-- First Text Field -->
-                        <label for="firstName">First Name:</label>
-                        <input type="text" id="firstName" name="firstName" placeholder="Enter The Recipe Name" required><br><br>
+                        <label for="firstFeild"></label>
+                        <input type="text" id="firstFeild" name="firstfeild" placeholder="Enter The Recipe Name" required><br><br>
                 
                         <!-- Second Text Field -->
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Description" required><br><br>
+                        <label for="lastFeild">Last Name:</label>
+                        <input type="text" id="lastFeild" name="lastFeild" placeholder="Description" required><br><br>
                 
-                        <!-- Dropdown List -->
-                        <label for="ingredients">Gender:</label>
-                        <select id="ingredients" name="ingredients" required>
-                            <option value="" disabled selected> </option>
-                            <option value="male"></option>
-                            <option value="female"></option>
-                            <option value="other"></option>
-                        </select><br><br>
-                
+                        <!-- Third Feild -->
+                        <label for="recipe_upload">Last Name:</label>
+                        <input type="text" id="recipe_upload" name="recipe_upload" placeholder="Enter Ingredients Added" required><br><br>
+                        
+
                         <!-- Submit Button -->
                         <input type="submit" value="Submit" class="submit_btn">
                     </form>
@@ -316,7 +312,7 @@
             </div>
         </div>
     </div>
-
+    
     <script src="./script.js"></script>
 </body>
 </html>
