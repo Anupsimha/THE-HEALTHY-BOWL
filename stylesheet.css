@@ -473,31 +473,35 @@ html body{
 }
 
 .autoshow{
-    animation: autoShowAnimation;
+    animation: autoShowAnimation 2s forwards;
+    animation-iteration-count: 1;
     animation-timeline: view();
 }
 
 @keyframes autoShowAnimation{
-    from{
+    0%{
         opacity: 0;
         transform: translate(50px) scale(0.3);
     }
-    /* to{
+    40% , 100%{
         opacity: 1;
-        transform: translate(0) scale(0);
-    } */
+        transform: translate(0) scale(1);
+    }
 }
 
 .autoBlur{
+    animation-name: myAnimation;
+    animation-duration: 2s;
     animation: autoBlurAnimation linear both;
     animation-timeline: view();
+    animation-iteration-count: 1;
 }
 
 @keyframes autoBlurAnimation{
     0%{
-        filter: blur(10px);
+        filter: blur(40px);
     }
-    45%,100%{
+    20%,100%{
         filter: blur(0px);
     }
 }
