@@ -499,7 +499,7 @@ html body{
 
 @keyframes autoBlurAnimation{
     0%{
-        filter: blur(40px);
+        filter: blur(15px);
     }
     20%,100%{
         filter: blur(0px);
@@ -809,6 +809,42 @@ html body{
 
 .form_of_recipe input:focus{
     border-bottom-color: #007BFF;
+}
+
+/* CATERING MADE EASY SECTION */
+
+.catering_services{
+    position: relative;
+    top: 100vh;
+    left: 0vw;
+    height: 550px;
+    width: 90%;
+    margin: 0px auto;
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 0.8;
+}
+
+.catering_services h2{
+    font-size: 42px;
+}
+
+.catering_main{
+    position: relative;
+    top: 15px;
+    height: 400px;
+    margin: auto 0px;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+}
+
+.catering_main:hover{
+    transform: scale(1.025);
 }
 
 
