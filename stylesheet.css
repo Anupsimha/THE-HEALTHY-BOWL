@@ -835,18 +835,61 @@ html body{
 .catering_main{
     position: relative;
     top: 15px;
+    left: 5%;
     height: 400px;
     margin: auto 0px;
-    width: 100%;
+    width: 90%;
     background-color: white;
     border-radius: 25px;
-    transition: 0.5s ease-in-out;
 }
 
-.catering_main:hover{
+.catering_main img{
+    position: relative;
+    top: 70px;
+    left: 3%;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    /* outline: 2px solid #28A745; */
+    padding: 5px;
+    border: 5px solid green;
+    box-shadow: 
+                0 0 3px #39ff14, 
+                0 0 6px #39ff14, 
+                0 0 9px #39ff14, 
+                0 0 12px #39ff14, 
+                0 0 15px #00ff00, 
+                0 0 18px #00ff00, 
+                0 0 21px #00ff00;
+}
+
+.sub-catering_main{
+    height: 100%;
+    width: 73%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    /* overflow: hidden; */
+}
+
+.sub-catering_main > *{
+    width: 45%;
+    height: 40%;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+    color: black;
+    font-weight: 600;
+}
+
+.sub-catering_main > *:hover{
     transform: scale(1.025);
 }
-
 
 
 
