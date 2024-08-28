@@ -22,7 +22,7 @@ html body{
     /* background-color: rgba(0, 0, 0, 0.7);  */
     padding: 0px; 
     box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.8); 
-    min-height: 400vh; 
+    min-height: 600vh; 
 }
 
 .navbar{
@@ -843,7 +843,7 @@ html body{
     height: 400px;
     margin: auto 0px;
     width: 90%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 25px;
 }
 
@@ -884,9 +884,8 @@ html body{
 .sub-catering_main > *{
     width: 45%;
     height: 40%;
-    /* border: 1px solid black; */
     border-radius: 10px;
-    transition: 0.4s ease-in;
+    transition: 0.2s ease-in-out;
     color: black;
     font-weight: 300;
     box-shadow: 0px 0px 4px black;
@@ -909,8 +908,8 @@ html body{
     font-style: normal;
     position: relative;
     z-index: 1;
-    background: linear-gradient(-25deg ,  rgb(85, 173, 255) 5% , white 80%);
-    border: 2px solid rgb(0, 200, 255);
+    background: linear-gradient(-25deg ,  white 5% , rgb(53, 154, 255) 95%);
+    border: 2px solid rgb(53, 154, 255);
 }
 
 .service_overview img{
@@ -923,16 +922,88 @@ html body{
     transition: inherit;
 }
 
+.service_overview h3{
+    color: white;
+    text-shadow: 1px 1px 0 #000, 
+    2px 2px 0 #000, 
+    3px 3px 0 #000;
+}
+
 .service_overview p{
     line-height: 1.4;
     font-family: "Kalam", cursive;
-    font-weight: 500;
+    font-weight: 800;
 }
 
+.menu{
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+    url('./images/whats_for_today.jpg') no-repeat center center;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 3px solid white;
+}
 
+.menu h3{
+    text-shadow: 1px 1px 0 #000, 
+    2px 2px 0 #000, 
+    3px 3px 0 #000;
+}
 
+.menu p{
+    /* font-weight: 400; */
+    /* position: absolute;
+    right: 1px; */
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7); /* Transparent text */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent border */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
 
+.customer_reviews{
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+    url(./images/customers_review.jpg) no-repeat center center;
+    border: 3px solid black;
+}
 
+.customer_reviews h3{
+    color: #fff;
+    text-shadow: 1px 1px 0 #000, 
+    2px 2px 0 #000, 
+    3px 3px 0 #000;
+}
+
+.customer_reviews p{
+    font-weight: 400;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #fff;
+}
+
+.gallery{
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+    url(./images/upload_some_snaps.jpg) no-repeat center center;
+    border: 3px solid rgb(82, 85, 73);
+}
+
+.gallery h3{
+    color: #fff;
+    text-shadow: 1px 1px 0 #000, 
+    2px 2px 0 #000, 
+    3px 3px 0 #000;
+}
+
+.gallery p{
+    font-weight: 400;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #fff;
+}
+
+/*REVIEWS SECTION*/
 
 
 
