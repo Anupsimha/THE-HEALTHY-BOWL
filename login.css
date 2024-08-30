@@ -3,12 +3,18 @@
     padding: 0px;
 }
 body{
-    background: url(./images/login\ page\ background2.png);
+    background: black;
+}
+.full{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    vertical-align: top;
 }
 .main{
-    padding: 10%;
+    /* padding: 10%; */
     display: grid;
-    justify-content: center;  
+    /* justify-content: center;   */
     position: relative;
 }
 .container{
@@ -29,20 +35,34 @@ body{
     text-decoration: none;
     font-size: 2vw;
     font-family: 'Times New Roman', Times, serif;
-    transition: border-bottom-width 1s;
+    transition: border-bottom-width 1s ease-in-out;
     color: white;
     padding-bottom: 5px;
 }
 .refrence a:hover{
-    animation: slideIn 1s forwards;
-    border-bottom: 2px solid blueviolet;
+    animation: slideIn 10s ease-in forwards;
+    /* border-bottom: 2px solid blueviolet; */
 }
 @keyframes slideIn {
     0%{
-        width: 0px;
+        border-bottom-width: 0%;
+        border-bottom: 2px solid blueviolet;
+    }
+    25%{
+        border-bottom-width: 25%;
+        border-bottom: 2px solid blueviolet;
+    }
+    50%{
+        border-bottom-width: 50%;
+        border-bottom: 2px solid blueviolet;
+    }
+    75%{
+        border-bottom-width: 75%;
+        border-bottom: 2px solid blueviolet;
     }
     100%{
-        width: 100px;
+        border-bottom-width: 100%;
+        border-bottom: 2px solid blueviolet;
     }
     
 }
@@ -90,7 +110,7 @@ body{
     margin-left: 4vw;
 }
 .btn{
-    margin-top: 70px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
@@ -114,11 +134,7 @@ body{
     display: flex;
     justify-content: center;
     color: white;
-    margin-top: 60px;
+    margin-top: 50px;
     font-weight: lighter;
     font-size: 1.5vw;
-}
-.first-logo{
-    transform: rotate(-45deg);
-
 }
