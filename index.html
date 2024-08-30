@@ -58,7 +58,7 @@
                 <p></p>
             </div>
         </div>
-        <div class="highlights">
+        <div class="highlights autoBlur">
             <div class="cake_recipes">
                 <p>Cake Recipes</p>
             </div>
@@ -90,8 +90,8 @@
                 <p>Delicious Chats</p>
             </div>
         </div>
-        <div class="recipes_of_day">
-            <h2>RECIPES OF THE DAY</h2>
+        <div class="recipes_of_day autoBlur">
+            <h2 >RECIPES OF THE DAY</h2>
             <p>Check out our featured recipe for today! This recipe is the most popular and trendy recipe that you’d definitely want to give a try!</p>
             <span class="view_all_recipes">View All<i class="fa-solid fa-circle-arrow-right"></i></span>
             <div class="recipes_of_the_day_list">
@@ -276,7 +276,7 @@
                 </div>
             </div>
         </div>
-        <div class="add_your_recipe">
+        <div class="add_your_recipe autoBlur">
             <h2>ADD YOUR RECIPE</h2>
             <p>Cooked Up Something Amazing? Share Your Recipe and Inspire Fellow Food Lovers!</p>
             <div class="uploading_recipe_section">
@@ -291,16 +291,57 @@
                     </form>
                 </div>
                 <div class="details_of_uploader">
-                    <div class="details">
-                        <input type="text" placeholder="Recipe Name" >
-                        <input type="text" placeholder="" id="">
-                        <input type="text" placeholder="Description" required>
+                    <form action="/submit-form" method="POST" class="form_of_recipe">
+                        <!-- First Text Field -->
+                        <label for="firstFeild"></label>
+                        <input type="text" id="firstFeild" name="firstfeild" placeholder="Recipe Name" required><br><br>
+                
+                        <!-- Second Text Field -->
+                        <label for="lastFeild">Last Name:</label>
+                        <input type="text" id="lastFeild" name="lastFeild" placeholder="Description" required><br><br>
+                
+                        <!-- Third Feild -->
+                        <label for="recipe_upload">Last Name:</label>
+                        <input type="text" id="recipe_upload" name="recipe_upload" placeholder="Ingredients Added" required><br><br>
+                        
+
+                        <!-- Submit Button -->
+                        <input type="submit" value="Submit" class="submit_btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="catering_services autoBlur">
+            <h2>CATERING MADE EASY!!!</h2>
+            <p>Begin your catering journey with The Healthy Bowl.</p>
+            <div class="catering_main">
+                <img class="catering_main_img" src="./images/Catering_made_easy.jpg" alt="catering image">
+                <div class="sub-catering_main">
+                    <div class="service_overview">
+                        <img src="./images/overview.png" alt="overview">
+                        <h3>OVERVIEW!!</h3>
+                        <p>Describe what your catering service offers.</p>
+                    </div>
+                    <div class="menu">
+                        <h3>What's For Today? Update it.</h3>
+                        <p>Elevate Your Palate: Discover Customer's Gourmet Selections</p>
+                    </div>
+                    <div class="customer_reviews">
+                        <h3>See What Customer Says?!</h3>
+                        <p>Honest Reviews from Happy Diners!!!</p>
+                    </div>
+                    <div class="gallery">
+                        <h3>Upload Some Snaps</h3>
+                        <p>Showcase Your Masterpieces</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="reviews_of_healthy_bowl">
+            
+        </div>
     </div>
-
+    
     <script src="./script.js"></script>
 </body>
 </html>
