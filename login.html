@@ -10,31 +10,30 @@
 </head>
 <body>
 <div class="full">
-    <img src="images/login image.webp" alt="WELCOME..." height="450px" width="350vw">
-    <div class="main">
-        <div class = "container">
-            <div class="refrence">
-                <a href="#">Sign in</a>
-                <a href="#">Sign up</a>
-            </div>
-            <div class="input">
-                <input type="text" placeholder="Username"><br>
-                <input type="password" placeholder="Password">
-            </div>
-            <div class="check-box">
-                <input type="checkbox" id="remember">
-                <label for="remember">Remember me</label>
-                <a href="#">Forgot password?</a>
-            </div>
-        </div>
-        <div class="btn">
-            <a href="#" ><button>Login</button></a>
-        </div>
-        <div class="end">
-            <h4>Access with <span>Touch ID</span></h4>
-        </div>
+  <div class="left">
+    <img src="./images/login image.webp" alt="image" width="130%">
+  </div>
+  <div class="right">
+    <div class="container">
+      <img src="./images/website_logo.png" alt="logo" height="50px" width="50px">
+      <h1>Healthy Bowl.com</h1>
+      <h2>Create an Account!</h2>
+      <!-- <button class="google-button">Sign up with Google</button> -->
+      <a href="https://accounts.google.com/gsi/select?client_id=92879692782-7nd751eusg5fep81a1vhm0r6hf0pdn54.apps.googleusercontent.com&ux_mode=redirect&login_uri=https%3A%2F%2Fwww.codewithharry.com%2Fapi%2Fauth%2Fgooglelogin&ui_mode=card&as=bARcEli5JMufV%2FNTO56LRg&g_csrf_token=be230c1717b6ea4b&origin=https%3A%2F%2Fwww.codewithharry.com"><button class="google-btn"><img src="./images/google btn.png" alt="Google Logo" height="40px" width="200px"></button></a>        
+      <fieldset><legend>OR SIGN UP WITH EMAIL</legend></fieldset>
+      <div class="input">
+        <label for="email">Email Address</label>
+        <input type="email" class="email">
+      </div>
+      <div class="captcha-box">
+        <input type="checkbox" id="captcha-check">
+        <label for="captcha-check">I am not a robot</label>
+        <img src="./images/recaptcha.png" alt="reCAPTCHA logo" class="captcha-logo">
+      </div>
+      <button class="create-button">Create an account</button>
+      <a class="login"><fieldset><legend>OR LOGIN</legend></fieldset></a>
     </div>
-</div>    
-    <script src='login.js'></script>
+  </div>
+</div>
 </body>
 </html>
