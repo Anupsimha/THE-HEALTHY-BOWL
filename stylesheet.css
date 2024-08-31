@@ -1048,6 +1048,7 @@ html body{
     justify-content: space-between;
     align-items: center;
     overflow-x: auto;
+    color: black;
 }
 
 .review{
@@ -1055,7 +1056,7 @@ html body{
     min-width: 300px;
     margin-right: 60px;
     flex: 0 0 auto;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
     /* cursor: pointer; */
     border-radius: 25px;
 }
@@ -1068,14 +1069,42 @@ html body{
     left: 25%;
 }
 
-.review .actual_review{
-    height: 80%;
-    width: 100%;
-    position: absolute;
+.actual_review{
+    height: 57%;
+    width: 300px;
+    padding: 20px;
+    position: relative;
     left: 0%;
     top: 5%;
-    background-color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-weight: 400;
+}
+
+.text-content {
     position: relative;
+    top: -15%;
+    line-height: 1.3;
+}
+
+.name_of_reviewer{
+    position: relative;
+    font-weight: 300;
+    top: 20px;
+    left: 170px;
+}
+
+.name_of_reviewer span{
+    position: relative;
+    top: -18px;
+    left: 5px;
+}
+
+.name_of_reviewer img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
 }
 
 /*ABOUT US SECTION*/
@@ -1151,10 +1180,19 @@ html body{
 
 /*FOOTER SECTION*/
 
+footer{
+    width: 100%;
+    height: 405px;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .main_footer{
     width: 100%;
     height: 400px;
-    background-color: black;
     /* box-shadow: 0px 0px 10px rgba(253, 247, 255, 0.8); */
     display: flex;
     flex-direction: row;
@@ -1244,6 +1282,10 @@ html body{
     font-weight: 200;
 }
 
+.social_connect{
+    border: none;
+}
+
 .social_icons{
     position: relative;
     top: -6%;
@@ -1290,3 +1332,8 @@ html body{
     cursor: pointer;
     border: 1px solid black;
 }
+
+.copyright{
+    color: white;
+}
+

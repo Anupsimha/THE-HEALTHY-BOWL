@@ -133,7 +133,24 @@ window.onbeforeunload = function () {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+let sections = document.getElementsByClassName('.mainpage');
+let navlinks = document.querySelectorAll('.web_logo .nav_contents a');
 
+window.onscroll = () =>{
+    sections.forEach(sec =>{
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset && top < offset + height){
+            navlinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelectorAll('.nav_contents a[href*=' + id + ']').classList.add('active');
+            })
+        }
+    })
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

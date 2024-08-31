@@ -16,11 +16,10 @@
                 <span class="web_title">Healthy Bowl</span>
             </div>
             <div class="nav_contents">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#social">Social Share</a>
-                <a href="#contact">Contact</a>
+                <a href="#home" class="active">Home</a>
+                <a href="#about" class="active">About</a>
+                <a href="#services" class="active">Services</a>
+                <a href="#contact" class="active">Contact</a>
                 <!-- ☰ -->
                 <button class="log_in" onclick="window.location.href='./login.html';">Log In</button>
             </div>
@@ -30,7 +29,7 @@
                 <i class="fa-solid fa-magnifying-glass" title="Search"></i> 
             </div>
         </nav>
-        <div class="hero">
+        <div class="hero mainpage" id="home">
             <div class="grid">
                 <div class="item1">
                     <img class="grid-image" src="" alt="img1" id="img1">
@@ -58,7 +57,7 @@
                 <p></p>
             </div>
         </div>
-        <div class="highlights autoBlur">
+        <div class="highlights autoBlur mainpage">
             <div class="cake_recipes">
                 <p>Cake Recipes</p>
             </div>
@@ -90,7 +89,7 @@
                 <p>Delicious Chats</p>
             </div>
         </div>
-        <div class="recipes_of_day autoBlur">
+        <div class="recipes_of_day autoBlur mainpage">
             <h2 >RECIPES OF THE DAY</h2>
             <p>Check out our featured recipe for today! This recipe is the most popular and trendy recipe that you’d definitely want to give a try!</p>
             <span class="view_all_recipes">View All<i class="fa-solid fa-circle-arrow-right"></i></span>
@@ -267,7 +266,7 @@
                 </div>
             </div>
         </div>
-        <div class="add_your_recipe autoBlur">
+        <div class="add_your_recipe autoBlur mainpage">
             <h2>ADD YOUR RECIPE</h2>
             <p>Cooked Up Something Amazing? Share Your Recipe and Inspire Fellow Food Lovers!</p>
             <div class="uploading_recipe_section">
@@ -302,7 +301,7 @@
                 </div>
             </div>
         </div>
-        <div class="catering_services autoBlur">
+        <div class="catering_services autoBlur mainpage" id="services">
             <h2>CATERING MADE EASY!!!</h2>
             <p>Begin your catering journey with The Healthy Bowl.</p>
             <div class="catering_main">
@@ -329,10 +328,10 @@
                 <button>CLICK HERE!!</button>
             </div>
         </div>
-        <div class="reviews_of_healthy_bowl autoBlur">
+        <div class="reviews_of_healthy_bowl autoBlur mainpage">
             <div class="heading_of_recipes">
                 <h2>REVIEWS</h2>
-                <p>See What People Say About US!!!</p>
+                <p>See What People Say About THE HEALTHY BOWL!!!</p>
             </div>
             <div class="content_of_reviews">
                 <div class="review">
@@ -344,9 +343,16 @@
                         <i class="far fa-star"></i>
                     </div>
                     <div class="actual_review">
+                        <p class="text-content">"I recently used 'The Healthy Bowl' website, and overall, I'm quite pleased with the experience.
+                            The site has a fresh and clean design that really resonates with the healthy lifestyle theme.
+                            Navigating through the different sections, especially the recipe and catering parts, was pretty straightforward.
+                            I loved the gallery section in the catering services—it's visually appealing and gives a great overview of what they offer. 
+                            The feature where you can input and track the ingredients used in recipes is also a nice touch.
+                            It’s handy for keeping things organized, especially when trying out new dishes."</p>
                     </div>
                     <div class="name_of_reviewer">
-
+                        <img src="" alt="">
+                        <span>Praveen</span>
                     </div>
                 </div>
                 <div class="review">
@@ -354,14 +360,20 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
                     <div class="actual_review">
-
+                        <p class="text-content">"The Healthy Bowl website has a lot of potential, but there are a few areas that could use improvement. 
+                            The overall design is appealing and fits well with the healthy and fresh theme. The site is easy to navigate, 
+                            and I appreciate the thought put into sections like the recipe and catering services.
+                            However, I did encounter some issues. The site performance could be better—there were times when pages took 
+                            longer to load, which was a bit frustrating. Additionally, while the content is informative, the interactivity 
+                            is limited. Features like user reviews, ratings, or even a more engaging recipe section could really elevate the user experience."</p>
                     </div>
                     <div class="name_of_reviewer">
-
+                        <img src="" alt="">
+                        <span>Julie</span>
                     </div>
                 </div>
                 <div class="review">
@@ -369,14 +381,20 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
                     <div class="actual_review">
-
+                        <p class="text-content">I recently visited 'The Healthy Bowl' website, and I’m impressed with what they’ve put together. 
+                            The design is clean, fresh, and aligns perfectly with the healthy, vibrant theme of the brand. 
+                            Navigating through the site is straightforward, and I particularly enjoyed exploring the recipe section, 
+                            which is both informative and easy to use.The gallery in the catering section is visually appealing, showcasing their offerings in a way that truly 
+                            makes you want to try everything. The feature that allows you to input and track ingredients in recipes is a 
+                            thoughtful addition that’s quite useful for those who love to cook and experiment in the kitchen.</p>
                     </div>
                     <div class="name_of_reviewer">
-
+                        <img src="" alt="">
+                        <span>Rickie</span>
                     </div>
                 </div>
                 <div class="review">
@@ -384,14 +402,20 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
                     </div>
                     <div class="actual_review">
-
+                        <p class="text-content">"'The Healthy Bowl' website is a fantastic resource for anyone interested in healthy eating and catering services. 
+                            The design is fresh, vibrant, and aligns beautifully with the brand’s mission. Navigating through the site is seamless, and the content 
+                            is well-organized, making it easy to find exactly what you’re looking for.
+                            The recipe section is one of my favorite parts—it's not just filled with delicious and healthy options, but the feature that allows 
+                            you to input and track your ingredients is incredibly practical for meal planning. The catering section is equally impressive, with 
+                            a stunning gallery that showcases the dishes beautifully. It really makes you excited about the possibilities for events and gatherings.</p>
                     </div>
                     <div class="name_of_reviewer">
-
+                        <img src="" alt="">
+                        <span>Joselpz</span>
                     </div>
                 </div>
                 <div class="review">
@@ -399,19 +423,26 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                     <div class="actual_review">
-
+                        <p class="text-content">"'The Healthy Bowl' website is an absolute gem! From the moment I landed on the homepage, 
+                            I was struck by the clean, vibrant design that perfectly captures the essence of healthy living. The user 
+                            experience is top-notch—navigating through the site is effortless, with every section thoughtfully laid out.
+                            The recipe section is a standout feature. Not only are the recipes enticing and well-presented, but the ability 
+                            to input and track ingredients is a brilliant touch. It’s incredibly useful for anyone who loves to cook and experiment 
+                            with healthy meals. The catering section is equally impressive, with a beautifully curated gallery that showcases their 
+                            offerings in a way that’s both appetizing and inspiring.</p>
                     </div>
                     <div class="name_of_reviewer">
-
+                        <img src="" alt="">
+                        <span>Nemaroo</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="about_us autoBlur">
+        <div class="about_us autoBlur mainpage" id="about">
             <div class="main_heading_about">
                 <h2>ABOUT US</h2>
                 <p>Know The People Behind This Artwork!!!</p>
@@ -447,13 +478,12 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer id="contact mainpage">
         <div class="main_footer">
             <div class="web_logo_footer">
                 <img src="./images/website_logo.png" alt="logo">
                 <h3>The Healthy Bowl!!</h3>
                 <p> - Thank you for visiting The Healthy Bowl! Your journey to a healthier you, starts here.</p>
-                <p class="copyright">&copy; 2024 The Healthy Bowl. All rights reserved.</p>
             </div>
             <div class="additional_details">
                 <div class="download">
@@ -499,7 +529,8 @@
                     <button>Subscribe</button>
                 </div>
             </div>
-        </div>
+        </div>       
+        <span class="copyright">&copy; 2024 The Healthy Bowl. All rights reserved.</span>
     </footer>
     <script src="./script.js"></script>
 </body>
