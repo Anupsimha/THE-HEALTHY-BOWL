@@ -476,23 +476,6 @@ html body{
     font-size: 42px;
 }
 
-/* .autoshow{
-    animation: autoShowAnimation 2s forwards;
-    animation-iteration-count: 1;
-    animation-timeline: view();
-}
-
-@keyframes autoShowAnimation{
-    0%{
-        opacity: 0;
-        transform: translate(50px) scale(0.3);
-    }
-    40% , 100%{
-        opacity: 1;
-        transform: translate(0) scale(1);
-    }
-} */
-
 .autoBlur{
     animation-name: myAnimation;
     animation-duration: 2s;
@@ -542,7 +525,7 @@ html body{
 }
 
 .recipes_of_the_day_list > *{
-    height: 90%;
+    height: 95%;
     width: 250px;
     margin-right: 60px;
     border: 1px solid black;
@@ -578,6 +561,7 @@ html body{
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom: 5px solid black;
+    margin-bottom: 10px;
 }
 
 .details_of_rcp{
@@ -596,17 +580,36 @@ html body{
 
 .name_of_dish{
     position: relative;
-    left: -20px;
-    top: -17px;
+    top: -20px;
+    left: -25px;
+    height: 80px;
+    width: 75%;
+    text-wrap: nowrap;
     font-size: 26px;
 }
 
+.food{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recipe_ranking{
+    color: white;
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    font-weight: 400;
+}
+
 .detail_of_recipient{
+    width: 100%;
+    height: 20%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
-    top: -40px;
+    top: -0px;
+
 }
 
 .detail_of_recipient img{
@@ -614,7 +617,21 @@ html body{
     width: 40px;
     border-radius: 25px;
     position: relative;
-    right: 12px;
+    left: 10px;
+}
+
+.detail_of_recipient h5{
+    height: 50px;
+    width: 60%;
+    text-wrap: nowrap;
+    position: relative;
+    top: 10px;
+    right: 40px;
+}
+
+.recipient{
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* ADD YOUR RECIPE SECTION */
