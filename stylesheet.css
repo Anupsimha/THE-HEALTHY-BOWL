@@ -434,25 +434,12 @@ html body{
 /*SCROLL BAR DESIGNING*/
 
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-    height: 5px; /* Height of the scrollbar for horizontal scrollbars */
+    width: 12px; 
+    height: 5px; 
   }
-  
-  /* Style the scrollbar track (part that is not draggable)
-  ::-webkit-scrollbar-track {
-    background: #2e2e2e; Track color
-    border-radius: 5px;
-  }
-  
-  /* Style the scrollbar thumb (draggable part) */
-  /* ::-webkit-scrollbar-thumb {
-    background: #000000; Thumb color
-    border-radius: 5px; Rounded corners
-  } */ 
-  
-  /* Style the scrollbar thumb on hover */
+
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.8); /* Thumb color on hover */
+    background: rgba(0, 0, 0, 0.8); 
   }
 
 
