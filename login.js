@@ -32,7 +32,7 @@ function loadLoginForm(){
     let image = document.getElementsByTagName("img")[3];
     image.style.height = '619px';
     left.style.marginTop = '40px';
-    full.style.gap = '94px'
+    full.style.gap = '94px';
      
     let signup = document.getElementsByClassName("signup")[0];
     signup.addEventListener("click", loadSignupForm);
