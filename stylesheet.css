@@ -146,10 +146,13 @@ html body{
     color: white;
     position: relative;
     left: 20px;
-    display: none;
 }
 
 /* HOME PAGE SECTION */
+
+.hero{
+    margin-bottom: 14vh;
+}
 
 .grid-image{
     transition: 0.2s ease-in-out;
@@ -1378,6 +1381,11 @@ footer{
 }
 
 /* BREAKPOINTS */
+@media (min-width:768px){
+    .box_icon{
+        display: none;
+    }
+}
 
 @media(min-width:480px) and (max-width : 768px){
     .container{
@@ -1430,10 +1438,32 @@ footer{
         margin-bottom: 60px;
     }
 
+    .grid{
+        position: relative;
+        top: 15vh;
+        left: 9.2vw;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 90%;
+        gap: 5px;
+    }
+    
+    .item1 , .item2 , .item3 , .item4{
+        height: 200px;
+        width: 250px;
+    }
+
+    .item5 , .item6 , .item7{
+        display: none;
+    }
+
     /* HIGHLIGHTS */
 
     .highlights{
         height: 150px;
+        overflow-y: hidden;
     }
 
     .highlights > *{
@@ -1442,5 +1472,70 @@ footer{
     }
 
     .highlights > * p{
-        font-size: 20px;
+        font-size: 25px;
     }
+
+    /* RECIPES OF DAY SECTION */
+
+    .recipes_of_day{
+        margin-top: 40px;
+    }
+
+    .recipes_of_day h2{
+        font-size: 1.3em;
+    }
+
+    .recipes_of_day p{
+        line-height: 1.1;
+        font-size: 0.9em;
+    }
+
+    .view_all_recipes{
+        position: absolute;
+        top: 25px;
+        right: 5px;
+    }
+
+    .recipes_of_the_day_list{
+        height: 50vh;
+    }
+
+    .img_of_rcp img{
+        position: relative;
+        top: -40px;
+        border-radius: 10px;
+        height: 200px;
+        width: 100%;
+    } 
+
+    .food{
+        font-size: 0.8em;
+    }
+
+    .detail_of_recipient{
+        position: relative;
+        top: -20px;
+    }
+
+    /* ADD YOUR RECIPE SECTION */
+
+    .add_your_recipe{
+        margin-top: -40px;
+        margin-bottom: 140px;
+    }
+
+    .add_your_recipe h2{
+        font-size: 1.3em;
+    }
+
+    .add_your_recipe p{
+        line-height: 1.1;
+        font-size: 0.9em;
+    }
+
+    .uploading_recipe_section{
+        width: 80%;
+        
+    }
+
+}

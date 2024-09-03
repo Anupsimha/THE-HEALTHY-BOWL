@@ -94,7 +94,7 @@ changeBackground7();
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const text = "Discover, Share, and Savor Deliciously Healthy, Quick, Nutritious Recipes";
+const text = "Discover, Share, and Savor Deliciously Healthy, Quick, Nutritious Recipes!!!";
 const speed = 12; // Typing speed in milliseconds
 const typedText = document.getElementById("captionid");
 
