@@ -19,7 +19,6 @@ html body{
 .container {
     width: 100%; 
     margin:0px auto; 
-    /* background-color: rgba(0, 0, 0, 0.7);  */
     padding: 0px; 
     box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.8); 
     min-height: 550vh; 
@@ -142,13 +141,20 @@ html body{
     background: rgba(142, 0, 189, 0.8);
 }
 
+.box_icon{
+    font-size: 16px;
+    color: white;
+    position: relative;
+    left: 20px;
+    display: none;
+}
+
 /* HOME PAGE SECTION */
 
 .grid-image{
     transition: 0.2s ease-in-out;
     width: 100%;
     height: 100%;
-    animation: blink 4s infinite;
 }
 
 .grid{
@@ -160,7 +166,7 @@ html body{
     left: 23%;
     gap: 5px;
     width: 55vw;
-    height: 500px;
+    height: 415px;
     grid-template-areas: 
     "I1 I2 I5 I6"
     "I3 I4 I5 I7"; 
@@ -223,6 +229,8 @@ html body{
     text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(0, 200, 255);
     transform: scale(1.3);
 }
+
+/* HIGHLIGHTS SECTION */
 
 .highlights{
     display: flex;
@@ -1382,3 +1390,70 @@ footer{
     color: white;
 }
 
+/* BREAKPOINTS */
+
+@media(min-width:480px) and (max-width : 768px){
+    .container{
+        min-height: 550vh;
+    }
+    
+    /* NAVBAR SECTION */
+    .navbar{
+        height: 16vh;
+    }
+
+    .web_logo img{
+        height: 40px;
+        width: 40px;
+        position: relative;
+        left: 20px;
+    }
+
+    .web_logo span{
+        position: relative;
+        left: 25px;
+        top: 5px;
+        font-size: 24px;
+    }
+
+    .nav_contents{
+        display: none;
+    }
+
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70px;
+        position: absolute;
+        right: 10vw;
+        top: 60%;
+        transform: scale(1.4);
+    }
+
+    .box_icon{
+        display: block; 
+    }
+
+    /* HOME PAGE SECTION */
+
+    .hero{
+        width: 90%;
+        margin-top: -40px;
+        margin-bottom: 60px;
+    }
+
+    /* HIGHLIGHTS */
+
+    .highlights{
+        height: 150px;
+    }
+
+    .highlights > *{
+        height: 130px;
+        width: 160px;
+    }
+
+    .highlights > * p{
+        font-size: 20px;
+    }
