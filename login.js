@@ -17,7 +17,7 @@ function loadSignupForm(){
     left.innerHTML = '<img src="./images/login image.webp" alt="image" width="130%">';
     container.style.height = '530px';
     let image = left.firstElementChild;
-    image.style.height = '535px';
+    image.style.height = '538px';
     left.style.marginTop = '0px';
     full.style.gap = '63.5px'
 
