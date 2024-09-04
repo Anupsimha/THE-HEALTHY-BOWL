@@ -142,6 +142,7 @@ html body{
 }
 
 .box_icon{
+    display: none;
     font-size: 16px;
     color: white;
     position: relative;
@@ -1382,7 +1383,7 @@ footer{
 
 /* BREAKPOINTS */
 @media (min-width:768px){
-    .box_icon{
+    .fa-bars .box_icon{
         display: none;
     }
 }
@@ -1534,8 +1535,63 @@ footer{
     }
 
     .uploading_recipe_section{
-        width: 80%;
+        width: 110%;
         
     }
 
+    .uploading_recipe_section{
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+
+    .upload-section{
+        width: 50%;
+        position: absolute;
+        left: 10px;
+    }
+
+    .details_of_uploader{
+        width: 50%;
+        position: absolute;
+        right: 10px;
+    }
+
+    .upload-section h2{
+        position: relative;
+        left: 20px;
+    }
+
+    .upload-section form{
+        transform: scale(0.9);
+        position: relative;
+        top: 40px;
+        left: 10px;
+    }
+
+    /* CATERING SERVICES SECTION */
+
+    .catering_services{
+        margin-top: -40px;
+    }
+
+    .catering_services h2{
+        font-size: 28px;
+    }
+
+    .catering_main{
+        height: 80%;
+    }
+
+    .catering_main_img{
+        display: none;
+    }
+
+    .sub-catering_main{
+        width: 100%;
+    }
+
+    .sub-catering_main > *{
+        height: 45%;
+    }
 }
