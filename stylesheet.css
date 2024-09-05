@@ -1594,4 +1594,10 @@ footer{
     .sub-catering_main > *{
         height: 45%;
     }
+
+    /* REVIEWS SECTION */
+
+    .reviews_of_healthy_bowl h2{
+        font-size: 32px;
+    }   
 }
