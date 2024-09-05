@@ -1399,7 +1399,7 @@ footer{
 
 @media(min-width:480px) and (max-width : 768px){
     .container{
-        min-height: 550vh;
+        min-height: 560vh;
     }
     
     /* NAVBAR SECTION */
@@ -1609,4 +1609,48 @@ footer{
     .reviews_of_healthy_bowl h2{
         font-size: 32px;
     }   
+
+    /* ABOUT US SECTION */
+
+    .about_us{
+        margin-top: -40px;
+        margin-bottom: 100vh;
+    }
+
+    .about_us h2{
+        font-size: 32px;
+    }
+
+    .main_content_about{
+        width:100%;
+    }
+
+    .members{
+        width: 200px;
+        height: 230px;  
+        position: relative;
+        top: -80px;
+    }
+
+    .info_about_member{
+        overflow: hidden;
+        background-color: #ffffff;
+        height: 100px;
+    }
+
+    .img_of_member{
+        position: relative;
+        left: 55px;
+        margin-bottom: 10px;
+    }
+
+    .name_of_person{
+        margin-bottom: 100px;
+    }
+
+    
+    .members button{
+        position: relative;
+        left: 55px;
+    }
 }
