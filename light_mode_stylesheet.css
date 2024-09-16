@@ -22,26 +22,22 @@ html body{
     padding: 0px; 
     box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.8); 
     min-height: 550vh; 
-    background-color: rgb(22, 22, 22);
-}
-
-.container_light{
-    background-color: rgb(253, 247, 255);
-}
+    background-color: rgb(255, 255, 255);
+} 
 
 .navbar{
     width: 100%;
     height: 14vh;
     position: sticky;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(229, 229, 229);
     top: 0; /* Sticks the navbar to the top of the viewport */
     left: 0;
     width: 100%; /* Make sure it stretches across the width of the viewport */
     z-index: 1000; 
     overflow: hidden;
     margin-bottom: 20px;
-    border-bottom: 2px solid #fff;
-    color: #fff;
+    border-bottom: 2px solid #000;
+    color: #000;
 }
 
 
@@ -51,7 +47,7 @@ html body{
     left: 60px;
     height: 50px;
     width: 50px;
-    border: 5px solid #fff;
+    border: 5px solid #000;
     border-radius: 50%;
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -98,7 +94,7 @@ html body{
 
 .nav_contents a{
     text-decoration: none;
-    color: white;
+    color: #000;
     font-size: 18px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -109,7 +105,7 @@ html body{
 }
 
 .log_in{
-    color: white;
+    color: #000;
     padding: 5px 12px;
     border-radius: 5px;
     font-size: 16px;
@@ -117,7 +113,7 @@ html body{
 }
 
 .nav_contents a:hover{
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(57, 57, 57, 0.3);
     border-radius: 10px;
 }
 
@@ -143,6 +139,7 @@ html body{
 .log_in:hover{
     transform: scale(1.1);
     background: rgba(142, 0, 189, 0.8);
+    color: white;
 }
 
 .box_icon{
@@ -162,6 +159,7 @@ html body{
     transition: 0.2s ease-in-out;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .grid{
@@ -171,7 +169,7 @@ html body{
     position: relative;
     top: 6vh;
     left: 23%;
-    gap: 5px;
+    gap: 2px;
     width: 55vw;
     height: 415px;
     grid-template-areas: 
@@ -180,18 +178,21 @@ html body{
 }
 
 .item1{
+    border: 5px solid black;
     height: 200px;
     width: 13.889vw;
     grid-area: I1;
 }
 
 .item2{
+    border: 5px solid black;
     height: 200px;
     width: 20.834vw;
     grid-area: I2;
 }
 
 .item3{
+    border: 5px solid black;
     height: 300px;
     width: 13.889vw;
     grid-area: I3;
@@ -202,26 +203,28 @@ html body{
     height: 300px;
     width: 20.834vw;
     grid-area: I4;
-    
+    border: 5px solid black;
 }
 
 .item5{
-    height: 100%;
+    height: 98.5%;
     width: 20.834vw;
     grid-area: I5;
-    
+    border: 5px solid black;
 }
 
 .item6{
     height: 200px;
     width: 20.834vw;
     grid-area: I6;
+    border: 5px solid black;
 }
 
 .item7{
-    height: 100%;
+    height: 97.5%;
     width: 20.834vw;
     grid-area: I7;
+    border: 5px solid black;
 }
 
 .caption{
@@ -435,6 +438,7 @@ html body{
 
 .highlights > *{
     border-radius: 10px;
+    border: 5px solid black;
     transition: 0.3s ease-in-out;
     margin-right: 60px;
     flex: 0 0 auto;
@@ -466,7 +470,7 @@ html body{
     left: 5%;
     width: 90%;
     height: 600px;
-    color: #fff;
+    color: #000;
     font-family: "Kanit", sans-serif;
     font-weight: 100;
     font-size: 22px;
@@ -476,6 +480,10 @@ html body{
 
 .recipes_of_day h2{
     font-size: 42px;
+}
+
+.recipes_of_day p{
+    font-weight: 300;
 }
 
 .autoBlur{
@@ -530,8 +538,8 @@ html body{
     height: 95%;
     width: 250px;
     margin-right: 60px;
-    border: 1px solid black;
-    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    background-color: rgba(164, 162, 162, 0.2);
     flex: 0 0 auto;
     border-radius: 15px;
     cursor: pointer;
@@ -577,7 +585,6 @@ html body{
     top: -50px;
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
-    /* font-style: normal; */
 }
 
 .name_of_dish{
@@ -639,7 +646,7 @@ html body{
 /* ADD YOUR RECIPE SECTION */
 
 .add_your_recipe{
-    color: #fff;
+    color: #000;
     font-weight: 100;
     height: 550px;
     width: 90%;
@@ -658,13 +665,17 @@ html body{
     font-size: 42px;
 }
 
+.add_your_recipe p{
+    font-weight: 300;
+}
+
 .uploading_recipe_section{
     height: 400px;
     width: 80%;
     position: relative;
     top: 20px;
     left: 10%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(225, 225, 225, 0.8);
     border-radius: 15px;
 }
 
@@ -843,7 +854,7 @@ html body{
     height: 550px;
     width: 90%;
     margin: 0px auto;
-    color: #fff;
+    color: #000;
     font-family: "Kanit", sans-serif;
     font-weight: 100;
     font-size: 22px;
@@ -855,6 +866,10 @@ html body{
     font-size: 42px;
 }
 
+.catering_services p{
+    font-weight: 300;
+}
+
 .catering_main{
     position: relative;
     top: 15px;
@@ -862,7 +877,7 @@ html body{
     height: 400px;
     margin: auto 0px;
     width: 90%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(225, 225, 225, 0.8);
     border-radius: 25px;
 }
 
@@ -1047,7 +1062,7 @@ html body{
     position: relative;
     top: 106vh;
     left: 6vw;
-    color: white;
+    color: #000;
     height: 550px;
     width: 90%;
     font-family: "Kanit", sans-serif;
@@ -1058,6 +1073,10 @@ html body{
 
 .heading_of_recipes h2{
     font-size: 42px;
+}
+
+.heading_of_recipes p{
+    font-weight: 300;
 }
 
 .content_of_reviews{
@@ -1075,7 +1094,7 @@ html body{
     min-width: 300px;
     margin-right: 60px;
     flex: 0 0 auto;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(216, 216, 216, 0.8);
     /* cursor: pointer; */
     border-radius: 25px;
 }
@@ -1137,7 +1156,7 @@ html body{
     position: relative;
     top: 105vh;
     left: 5%;
-    color: white;
+    color: black;
     height: 550px;
     width: 90%;
     font-family: "Kanit", sans-serif;
@@ -1149,6 +1168,10 @@ html body{
 
 .main_heading_about h2{
     font-size: 42px;
+}
+
+.main_heading_about p{
+    font-weight: 300;
 }
 
 .main_content_about{
@@ -1163,7 +1186,7 @@ html body{
 .members{
     height: 100%;
     width: 33.33%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(203, 203, 203, 0.8);
     border-radius: 25px;
     border: 5px solid white;
 }

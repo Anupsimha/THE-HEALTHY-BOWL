@@ -154,8 +154,19 @@ window.onscroll = () =>{
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let modeIcon = document.getElementById("icon");
-let container = document.getElementsByClassName("container")[0];
-modeIcon.addEventListener('click', function() {
-    container.classList.toggle('container_light');
-  });
+const switchThemeButton = document.getElementById('switch-theme');
+const stylesheet = document.getElementById('theme-stylesheet');
+
+let isLightMode = false;
+
+switchThemeButton.addEventListener('click', function() {
+    if (isLightMode) {
+        // Switch to dark mode
+        stylesheet.setAttribute('href', './stylesheet.css');
+    } else {
+        // Switch to light mode
+        stylesheet.setAttribute('href', './light_mode_stylesheet.css');
+    }
+
+    isLightMode = !isLightMode;
+});
