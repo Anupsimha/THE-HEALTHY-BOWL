@@ -170,3 +170,21 @@ switchThemeButton.addEventListener('click', function() {
 
     isLightMode = !isLightMode;
 });
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let modeIcon = document.getElementById("icon");
+let container = document.getElementsByClassName("container")[0];
+modeIcon.addEventListener('click', function() {
+    container.classList.toggle('container_light');
+
+    if (modeIcon.classList.contains('fa-moon')) {
+        modeIcon.classList.remove('fa-moon');
+        modeIcon.classList.add('fa-sun');
+        modeIcon.title = "Enable Dark Mode"; // Update the tooltip text
+      } else {
+        modeIcon.classList.remove('fa-sun');
+        modeIcon.classList.add('fa-moon');
+        modeIcon.title = "Enable Light Mode"; // Update the tooltip text
+      }
+  });
