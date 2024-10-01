@@ -163,9 +163,11 @@ switchThemeButton.addEventListener('click', function() {
     if (isLightMode) {
         // Switch to dark mode
         stylesheet.setAttribute('href', './stylesheet.css');
+        switchThemeButton.setAttribute('class', 'fas fa-sun');
     } else {
         // Switch to light mode
         stylesheet.setAttribute('href', './light_mode_stylesheet.css');
+        switchThemeButton.setAttribute('class', 'fa-regular fa-moon');
     }
 
     isLightMode = !isLightMode;
