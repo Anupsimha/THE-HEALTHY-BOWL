@@ -42,4 +42,25 @@ function loadLoginForm(){
 
 loadSignupForm();
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+let toggleButton = document.getElementById('switch-theme');
+let stylesheet = document.getElementById('theme-stylesheet');
+
+let isLightMode = false;
+console.log(toggleButton);
+console.log(stylesheet);
+
+ toggleButton.addEventListener('click', function(){
+    if(isLightMode){
+        stylesheet.setAttribute('href', './login.css');
+    }
+    else{
+        stylesheet.setAttribute('href', './loginLight.css');
+    }
+
+    isLightMode = !isLightMode;
+ });
+
+
 
