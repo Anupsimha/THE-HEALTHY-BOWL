@@ -1273,8 +1273,15 @@ html body{
     width: 70%;
 }
 
-.contact_us img{
-    color: #00ff00;
+.contact_us i{
+    width: 40px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;  
+    justify-content: center;
+    padding-top: 8px;
+    background-color: #218838;
 }
 
 .right{
@@ -1311,6 +1318,21 @@ html body{
     height: 110px;
     margin-top: 10px;
     border-radius: 10px;
+}
+
+.right button{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 120px;
+    height: 40px;
+    position: relative;
+    left: 80%;
+    border-radius: 20px;
+    background-color: #218838;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Kanit", sans-serif;
 }
 /*FOOTER SECTION*/
 
