@@ -1226,6 +1226,109 @@ html body{
     transform: scale(1.1);
 }
 
+.contact_us{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 0.8;
+    width: 90%;
+    box-sizing: border-box;
+    margin-top: 780px;
+}
+
+.left{
+    margin-left: 80px;
+}
+
+.contact_us h2{
+    font-size: 42px;
+}
+
+.contact_us p{
+    font-weight: lighter;
+    line-height: 1.2;
+    font-size: 22px;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.info_about_contact .info{
+    display: flex;
+}
+
+.contact_us h4{
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 1.2;
+    font-size: 22px;
+    width: 70%;
+}
+
+.contact_us i{
+    width: 40px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;  
+    justify-content: center;
+    padding-top: 8px;
+    background-color: #218838;
+}
+
+.right{
+    margin-top: 20px;
+}
+
+.right label{
+    font-weight: bold;
+}
+
+.right .name{
+    height: 35px;
+    width: 600px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.centre{
+    display: flex;
+    gap: 15px;
+}
+
+.centre input{
+    width: 290px;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.msg{
+    width: 600px;
+    height: 110px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.right button{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 120px;
+    height: 40px;
+    position: relative;
+    left: 80%;
+    border-radius: 20px;
+    background-color: #218838;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Kanit", sans-serif;
+}
 /*FOOTER SECTION*/
 
 footer{
