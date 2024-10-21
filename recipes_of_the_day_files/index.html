@@ -11,181 +11,110 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>RECIPES OF THE DAY</h1>
-    </header>
-    <section id="curr_day">
-        <h1><u>CURRENT DAY LIST</u></h1>
-        <div class="recipes_of_the_day_list">
-            <div class="name">
-                <div class="time_uploaded">
-                    <p><i class="fa-regular fa-clock"></i>40m</p>
+    <nav class="navbar" id="nav_light">
+        <div class="web_logo">
+            <img src="../images/website_logo.png" alt="logo">
+            <span class="web_title">Healthy Bowl</span>
+        </div>
+        <div class="nav_contents">
+            <a href="#home" class="active">Home</a>
+            <a href="#about" class="active">About</a>
+            <a href="#services" class="active">Services</a>
+            <a href="#contact" class="active">Contact</a>
+            <button class="log_in" onclick="window.location.href='./login.html';">Log In</button>
+        </div>
+        <div class="search">
+            <!-- <i class="fa-solid fa-moon" id="icon" title="Enable Dark Mode"></i> -->
+            <i class="fa-regular fa-moon" id="switch-theme" title="Enable Dark Mode"></i>
+            <i class="fa-solid fa-magnifying-glass" title="Search"></i> 
+            <i class="fa-solid fa-bars box_icon" title="responsive"></i>
+        </div>
+    </nav>
+    <section id="contest_section_heading">
+        <div class="claim_reward_section">
+            <button class="reward">Claim Reward</button>
+            <img src="../images/claim_reward.jpg" alt="claim reward" class="claim_reward">
+        </div>
+        <div class="contest_main">
+            <img src="../images/contest.png" alt="contest image">
+            <div class="contest_title">
+                <h2>HEALTHY BOWL <b>CONTEST</b></h2>
+                <p>Contest every week. Compete and see your rating!</p>
+            </div>
+        </div>
+        <div class="weekly_update">
+            <div class="weekly_con">
+                <span class="remainder" title="Set Remainder"><i class="fa-solid fa-bell"></i></span>
+                <div class="weekly_text">
+                    <h2>Weekly Contest 312</h2>
+                    <hr>
+                    <p><i class="fa-regular fa-clock"></i>  10/10/2024 Sunday</p>
                 </div>
-                <div class="img_of_rcp">
-                    <img src="../images/recipes_of_the_day.jpg" alt="dhokla">
+            </div>
+            <div class="biweekly_con">
+                <span class="remainder" title="Set Remainder"><i class="fa-solid fa-bell"></i></span>
+                <div class="biweekly_text">
+                    <h2>Biweekly Contest 122</h2>
+                    <hr>
+                    <p><i class="fa-regular fa-clock"></i>  14/10/2024 Wednesday</p>
                 </div>
-                <div class="details_of_rcp">
-                    <div class="name_of_dish">
-                        <h4 class="food">Dhokla</h4>
+            </div>
+        </div>
+        <div class="featured_contest">
+            <div class="heading_featured">
+                <h2>FEATURED CONTESTS</h2>
+                <span class="sponsor"><i class="fa-regular fa-heart"></i> Sponsor a Contest</span>
+            </div>
+            <div class="featured_content">
+                <div class="featured1">
+                    <div class="img_of_featured">
+                        <img src="" alt="">
                     </div>
-                    <div class="detail_of_recipient">
-                        <img src="../images/dp1.jpg" alt="dp">
-                        <h5 class="recipient">Anish Bharadwaj</h5>
+                    <div class="featured_text">
+                        <h3>Weekly Contest 291</h3>
+                        <p><i class="fa-regular fa-clock"></i> Ended on 4/8/24</p>
+                    </div>
+                </div>
+                <div class="featured2">
+                    <div class="img_of_featured">
+                        <img src="" alt="">
+                    </div>
+                    <div class="featured_text">
+                        <h3>Weekly Contest 285</h3>
+                        <p><i class="fa-regular fa-clock"></i> Ended on 23/6/24</p>
+                    </div>
+                </div>
+                <div class="featured3">
+                    <div class="img_of_featured">
+                        <img src="" alt="">
+                    </div>
+                    <div class="featured_text">
+                        <h3>Weekly Contest 277</h3>
+                        <p><i class="fa-regular fa-clock"></i> Ended on 24/3/24</p>
+                    </div>
+                </div>
+                <div class="featured4">
+                    <div class="img_of_featured">
+                        <img src="" alt="">
+                    </div>
+                    <div class="featured_text">
+                        <h3>Weekly Contest 268</h3>
+                        <p><i class="fa-regular fa-clock"></i> Ended on 17/12/23</p>
                     </div>
                 </div>
             </div>
-            <div class="name">
-                <div class="time_uploaded">
-                    <p><i class="fa-regular fa-clock"></i>45m</p>
+        </div>
+        <div class="dashboard">
+            <div class="past_my_contests">
+                <div class="button_past_my_contests">
+                    <button>Past Contests</button>
+                    <button>My Contests</button>
                 </div>
-                <div class="img_of_rcp">
-                    <img src="../images/rod2.jpg" alt="rainboww bowl">
-                </div>
-                <div class="details_of_rcp">
-                    <div class="name_of_dish">
-                        <h4 class="food">Rainbow Bowl</h4>
-                    </div>
-                    <div class="detail_of_recipient">
-                        <img src="../images/recipes_of_the_day_dp2.jpg" alt="dp">
-                        <h5 class="recipient">Nimisha Mishra</h5>
-                    </div>
-                </div>
+                <span class="info"><i class="fa-solid fa-circle-info"></i> What's a virtual Contest?</span>
+                <hr>
             </div>
-            <div class="name">
-                <div class="time_uploaded">
-                    <p><i class="fa-regular fa-clock"></i>55m</p>
-                </div>
-                <div class="img_of_rcp">
-                    <img src="../images/rod3.jpg" alt="Crispy Potato Snacks">
-                </div>
-                <div class="details_of_rcp">
-                    <div class="name_of_dish">
-                        <h4 class="food">Crispy Potato Snacks</h4>
-                    </div>
-                    <div class="detail_of_recipient">
-                        <img src="../images/recipes_of_the_day_dp3.jpg" alt="dp">
-                        <h5 class="recipient">Paul Carter</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="name">
-                <div class="time_uploaded">
-                    <p><i class="fa-regular fa-clock"></i>1hr</p>
-                </div>
-                <div class="img_of_rcp">
-                    <img src="../images/rod4.webp" alt="dhokla">
-                </div>
-                <div class="details_of_rcp">
-                    <div class="name_of_dish">
-                        <h4 class="food">Aloo Parantha</h4>
-                    </div>
-                    <div class="detail_of_recipient">
-                        <img src="../images/recipes_of_the_day_dp4.jpg" alt="dp">
-                        <h5 class="recipient">Mehak Kaur</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="name">
-                <div class="time_uploaded">
-                    <p><i class="fa-regular fa-clock"></i>1hr</p>
-                </div>
-                <div class="img_of_rcp">
-                    <img src="../images/rod5.jpg" alt="dhokla">
-                </div>
-                <div class="details_of_rcp">
-                    <div class="name_of_dish">
-                        <h4 class="food">Hyd Biryani</h4>
-                    </div>
-                    <div class="detail_of_recipient">
-                        <img src="../images/recipes_of_the_day_dp5.jpg" alt="dp">
-                        <h5 class="recipient">Keerthi Reddy</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="name">
-                <div class="time_uploaded">
-                    <p><i class="fa-regular fa-clock"></i>1hr</p>
-                </div>
-                <div class="img_of_rcp">
-                    <img src="../images/rod6.jpg" alt="dhokla">
-                </div>
-                <div class="details_of_rcp">
-                    <div class="name_of_dish">
-                        <h4 class="food">Idli Sambar</h4>
-                    </div>
-                    <div class="detail_of_recipient">
-                        <img src="../images/recipes_of_the_day_dp6.jpg" alt="dp">
-                        <h5 class="recipient">Arun Kumar</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="name">
-                <div class="time_uploaded">
-                    <p><i class="fa-regular fa-clock"></i>2hr</p>
-                </div>
-                <div class="img_of_rcp">
-                    <img src="../images/rod7.jpg" alt="dhokla">
-                </div>
-                <div class="details_of_rcp">
-                    <div class="name_of_dish">
-                        <h4 class="food">Chicken Wings</h4>
-                    </div>
-                    <div class="detail_of_recipient">
-                        <img src="../images/recipes_of_the_day_dp7.jpg" alt="dp">
-                        <h5 class="recipient">Khubaib</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="name">
-                <div class="time_uploaded">
-                    <p><i class="fa-regular fa-clock"></i>3hr</p>
-                </div>
-                <div class="img_of_rcp">
-                    <img src="../images/rod8.jpg" alt="dhokla">
-                </div>
-                <div class="details_of_rcp">
-                    <div class="name_of_dish">
-                        <h4 class="food">Butter Sticks</h4>
-                    </div>
-                    <div class="detail_of_recipient">
-                        <img src="../images/recipes_of_the_day_dp8.jpg" alt="dp">
-                        <h5 class="recipient">Sneha M</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="name">
-                <div class="time_uploaded">
-                    <p><i class="fa-regular fa-clock"></i>3hr</p>
-                </div>
-                <div class="img_of_rcp">
-                    <img src="../images/rod9.jpg" alt="dhokla">
-                </div>
-                <div class="details_of_rcp">
-                    <div class="name_of_dish">
-                        <h4 class="food">Italian Pasta</h4>
-                    </div>
-                    <div class="detail_of_recipient">
-                        <img src="../images/recipes_of_the_day_dp9.jpg" alt="dp">
-                        <h5 class="recipient">Julie Dawson</h5>
-                    </div>
-                </div>
-            </div> 
-            <div class="name">
-                <div class="time_uploaded">
-                    <p><i class="fa-regular fa-clock"></i>4hr</p>
-                </div>
-                <div class="img_of_rcp">
-                    <img src="../images/rod10.jpg" alt="dhokla">
-                </div>
-                <div class="details_of_rcp">
-                    <div class="name_of_dish">
-                        <h4 class="food">Biryani</h4>
-                    </div>
-                    <div class="detail_of_recipient">
-                        <img src="../images/recipes_of_the_day_dp10.jpg" alt="dp">
-                        <h5 class="recipient">Vinay K</h5>
-                    </div>
-                </div>
+            <div class="global_ranking">
+
             </div>
         </div>
     </section>

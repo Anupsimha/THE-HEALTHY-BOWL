@@ -6,11 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 html body{
     padding: 0;
     margin: 0;
-    min-height: 300vh;
+    min-height: 400vh;
     box-sizing: border-box;
     font-family: "Kalam", cursive;
     background-color: rgb(22, 22, 22);
@@ -33,58 +34,535 @@ html body{
     }
 }
 
-/* HEADER SECTION */
+/* NAVBAR SECTION */
 
-header{
+.navbar{
+    width: 100%;
+    height: 14vh;
     position: sticky;
+    background-color: rgb(22, 22, 22);
+    top: 0; /* Sticks the navbar to the top of the viewport */
+    left: 0;
+    width: 100%; /* Make sure it stretches across the width of the viewport */
+    z-index: 1000; 
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+
+.web_logo img{
+    position: relative;
+    top: 20px;
+    left: 60px;
+    height: 50px;
+    width: 50px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.web_logo span{
+    position: relative;
+    top: -2px;
+    left: 70px;
+    font-family: "Kalam", cursive;
+    font-size: 32px;
+    font-weight: 600;
+    animation: slideIn 1s forwards;
+}
+
+.nav_contents{
+    position: relative;
+    left: 40vw;
+    bottom: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    animation: slideUp 1.5s forwards;
+}
+
+.nav_contents a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.log_in{
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+.nav_contents a:hover{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.search{
+    position: absolute;
+    right: 6vw;
+    bottom: 3vh;
+    transform: scale(1.8);
+}
+
+.search .fa-magnifying-glass{
+    position: relative;
+    left: 8px;
+}
+
+.log_in{
+    font-family: "Lato", sans-serif;
+    background: rgba(182, 92, 212, 0.8);
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.log_in:hover{
+    transform: scale(1.1);
+    background: rgba(142, 0, 189, 0.8);
+}
+
+.box_icon{
+    display: none;
+    font-size: 16px;
+    position: relative;
+    left: 20px;
+}
+
+/* CONTEST SECTION */
+
+#contest_section_heading{
+    width: 100%;
+    height: 55vh;
+    /* background: linear-gradient(to right , rgb(57, 57, 57) , rgb(98, 98, 98) , rgb(57 , 57 , 57)); */
+    background: radial-gradient(at top , rgb(57, 57, 57) , rgb(98, 98, 98));
+    margin-top: -1.2%;
+}
+
+.claim_reward_section{
+    display: flex;
+    height: 50px;
+    width: auto; 
+    position: relative;
+    top: 10%;
+    left: 15%;
+}
+
+.reward{
+    height: 80%;
+    padding: 0px 30px 0px 10px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    font-style: normal;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease-in-out;
+}
+
+.claim_reward{
+    position: relative;
+    right: 27px;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.reward:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.025);
+}
+
+.contest_main{
+    position: relative;
+    left: 35%;
+    top: -5%;
+    height: 70%;
+    width: 30%;
+}
+
+.contest_main img{
+    position: relative;
+    top: -20%;
+    left: 5%;
+    height: 400px;
+    width: 400px;
+}
+
+.contest_title{
+    font-family: 'Fira Sans Condensed';
+    font-style: italic;
+    font-weight: 100;
+    font-size: 27px;
+    color: white;
+    position: absolute;
+    bottom: -20%;
+    left: 8%;
+    line-height: 0em;
+}
+
+.contest_title h2 b{
+    font-size: 28px;
+}
+
+.contest_title p{
+    width: 110%;
+    font-size: 22px;
+    position: relative;
+    right: 35px;
+}
+
+/* WEEKLY UPDATE */
+
+.weekly_update{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 20%;
+    top: 8%;
+    width: 60%;
+    height: 280px;
+}
+
+.weekly_update > *{
+    width: 45%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 5px rgba(202, 202, 202, 0.3);
+    transition: 0.2s ease-in-out;
+}
+
+.weekly_update > *:hover{
+    transform: scale(1.025);
+}
+
+.weekly_con{
+    background: url("../images/weekly_contest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.weekly_con::before {
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
-    height: 6vw;
     width: 100%;
-    color: #fff;
-    background-color: rgb(22, 22, 22);
-    font-family: "Kanit", sans-serif;
-    font-weight: 100;
-    font-size: 22px;
-    border-bottom: 2px solid white;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparent initially */
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.weekly_con, .weekly_con .weekly_text {
+    color: white;
+    position: relative;
+    z-index: 2; /* Ensure text stays above the background */
+}
+
+.weekly_text{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    font-style: normal;
+    position: relative;
+    top: 50px;
+    right: 30px;
+    line-height: 0.2;
+}
+
+.weekly_text h2{
+    font-size: 32px;
+    font-weight: 1000;
+    transform: translateX(-100%); /* Start off to the left */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for both transform and opacity */
+}
+
+.weekly_text p{
+    transform: translateX(100%); /* Start off to the right */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.weekly_con:hover .weekly_text h2{
+    transform: translateX(0); /* Move to original position (from the left) */
+    opacity: 1; /* Fade in */
+}
+
+.weekly_con:hover .weekly_text p{
+    transform: translateX(0); /* Move to original position (from the right) */
+    opacity: 1; /* Fade in */
+}
+
+.weekly_con .weekly_text {
+    opacity: 0; /* Initially hide extra text */
+    transition: opacity 0.3s ease;
+}
+
+.weekly_con:hover::before {
+    background-color: rgba(0, 7, 42, 0.7); /* Darken background on hover */
+    border-radius: 10px;
+}
+
+.weekly_con:hover .weekly_text {
+    opacity: 1; /* Show the extra text on hover */
+    border-radius: 10px;
+}
+
+.biweekly_con{
+    background: url("../images/biweekly_contest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.biweekly_con::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparent initially */
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.biweekly_con, .biweekly_con .biweekly_text {
+    color: white;
+    position: relative;
+    z-index: 2; /* Ensure text stays above the background */
+}
+
+.biweekly_text{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    font-style: normal;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    line-height: 0.2;
+}
+
+.biweekly_text h2{
+    font-size: 32px;
+    font-weight: 1000;
+    transform: translateX(-100%); /* Start off to the left */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for both transform and opacity */
+}
+
+.biweekly_text p{
+    transform: translateX(100%); /* Start off to the right */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
+    left: 80px;
+}
+
+.biweekly_con:hover .biweekly_text h2{
+    transform: translateX(0); /* Move to original position (from the left) */
+    opacity: 1; /* Fade in */
+}
+
+.biweekly_con:hover .biweekly_text p{
+    transform: translateX(0); /* Move to original position (from the right) */
+    opacity: 1; /* Fade in */
+}
+
+.biweekly_con .biweekly_text {
+    opacity: 0; /* Initially hide extra text */
+    transition: opacity 0.3s ease;
+}
+
+.biweekly_con:hover::before {
+    background-color: rgba(9, 24, 3, 0.7); /* Darken background on hover */
+    border-radius: 10px;
+}
+
+.biweekly_con:hover .biweekly_text {
+    opacity: 1; /* Show the extra text on hover */
+    border-radius: 10px;
+}
+
+.remainder{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transform: scale(1.7);
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s ease-in-out;
     z-index: 1000;
 }
 
-header h1{
-    position: absolute;
-    top: -10px;
-    left: 15px;
+.remainder:hover{
+    color: #fff;
+    transform: scale(1.8);
 }
 
-/* CURRENT DAY SECTION */
+/* FEATURED CONTEST */
 
-#curr_day{
-    height: 600px;
-    width: 90%;
+.featured_contest{
     position: relative;
     left: 5%;
-    top: 20px;
-    /* background-color: rgba(255, 255, 255, 0.1); */
+    top: 18%;
+    height: 50vh;
+    width: 90%;
+    color: #fff;
     font-family: "Kanit", sans-serif;
     font-weight: 100;
     font-size: 22px;
     font-style: normal;
     line-height: 0.8;
+    /* background-color: rgba(255, 255, 255, 0.3); */
 }
 
-#curr_day h1{
+.featured_contest h2{
+    font-size: 42px;
+}
+
+.sponsor{
+    font-family: 'Fira Sans Condensed';
+    font-style: italic;
+    font-weight: 200;
+    color: blue;
+    font-weight: 300;
     position: absolute;
-    left: 20px;
-    color: #fff;
-    font-weight: 600;
-    font-size: 32px;
+    right: 0px;
+    top: 20px;
+    cursor: pointer;
+    text-shadow: 0px 0px 25px rgb(4, 0, 255);
 }
 
-.recipes_of_the_day_list{
+.fa-heart{
+    text-shadow: 
+        0 0 5px #ffffff,  /* Inner glow */
+        0 0 10px #0008a9, /* Slightly farther glow */
+        0 0 20px #0b0070, /* Bigger glow */
+        0 0 40px #020031, /* Neon effect */
+        0 0 80px #000000;
+}
+
+.featured_content{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured_content > *{
+    height: 100%;
+    width: 22.5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.img_of_featured{
+    height: 70%;
+    width: 100%;
+    background-color: antiquewhite;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.featured_text{
     position: relative;
-    left: 20px;
-    top: 100px;
+    top: 0px;
+    left: 5px;
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 100;
+    line-height: 0.0em;
 }
 
+/* MY RANKINGS AND GLOBAL RANKINGS */
+
+.dashboard{
+    position: relative;
+    left: 5%;
+    top: 40%;
+    height: 120vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard > *{
+    border-radius: 15px;
+    background-color: rgb(98, 98, 98);
+}
+
+.past_my_contests{
+    height: 100%;
+    width: 74%;
+}
+
+.global_ranking{
+    height: 100%;
+    width: 24%;
+}
+
+.button_past_my_contests{
+    height: 6%;
+    position: relative;
+    top: 5px;
+    left: 30px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button_past_my_contests button{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(129, 128, 128);
+    border: 0px;
+    outline: 0px;
+    color: rgb(205, 205, 205);
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+.button_past_my_contests button:hover{
+    color: #fff;
+}
+
+.info{
+    position: absolute;
+    right: 28%;
+    top: 3%;
+}
 
 
