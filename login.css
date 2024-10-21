@@ -144,6 +144,7 @@ body {
 .left{
   width: 270px;
   padding: 10px;
+  
 }
 
 .logo{
@@ -162,6 +163,7 @@ body {
   width: 270px;
   padding: 10px;
   margin-top: 20px;
+  margin-left: 0px;
 }
 .container{
   background-color: #333;
@@ -218,10 +220,11 @@ fieldset{
   margin-left: -25px;
 }
 
-label{
+.label{
   display: flex;
   float: left;
   font-size: 18px;
+  margin-left: -30px;
   color: #fff;
 }
 
@@ -229,38 +232,47 @@ input{
   width: 350px;
   height: 40px;
   border-radius: 5px;
+  margin-left: -50px;
   border: none;
   color: black;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
-.captcha-box {
-  width: 320px;
-  border: 1px solid gray;
+.password{
+  margin-left: -90px;
+}
+
+.captcha{
+  border: 1px solid white;
+  width: 300px;
   height: 60px;
-  margin-top: 20px;
-  margin-left: -25px;
-  background-color: #fff;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
 }
 
-.captcha-box label {
-  font-size: 18px;
-  margin-top: -30px;
-  margin-left: 70px;
-  color: black;
-}
-
-.captcha-box input[type="checkbox"] {
+.captcha input{
   width: 25px;
-  margin-right: 280px;
-  margin-top: 5px;
+  position: relative;
+  right: 10%;
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
-.captcha-logo {
-  margin-left: 200px;
+.captcha label{
+  width: 120px;
+  position: relative;
+  right: 10%;
+  font-size: 18px;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-family: kanit,"sans-sarif";
+}
+
+.captcha img{
   width: 70px;
-  height: 70px;
-  margin-top: -52px;
 }
 
 .create-button{

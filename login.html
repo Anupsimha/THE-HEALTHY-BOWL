@@ -32,27 +32,31 @@
 </nav>
 <div class="full">
   <div class="left">
-    <img src="./images/login image.webp" alt="image" width="130%" class="left-img">
+    <img src="./images/login image.webp" alt="image" width="130%" class="left-img" height="577px">
   </div>
   <div class="right">
     <div class="container">
-      <img class="logo" src="./images/website_logo.png" alt="logo" height="50px" width="50px">
-      <h1>Healthy Bowl.com</h1>
-      <h2>Create an Account!</h2>
-      <!-- <button class="google-button">Sign up with Google</button> -->
-      <a class="google-btn" href="https://accounts.google.com/gsi/select?client_id=92879692782-7nd751eusg5fep81a1vhm0r6hf0pdn54.apps.googleusercontent.com&ux_mode=redirect&login_uri=https%3A%2F%2Fwww.codewithharry.com%2Fapi%2Fauth%2Fgooglelogin&ui_mode=card&as=bARcEli5JMufV%2FNTO56LRg&g_csrf_token=be230c1717b6ea4b&origin=https%3A%2F%2Fwww.codewithharry.com"><button class="google-btn"><img src="./images/google btn.png" alt="Google Logo" height="40px" width="200px"></button></a>        
-      <fieldset><legend>OR SIGN UP WITH EMAIL</legend></fieldset>
-      <div class="input">
-        <label for="email">Email Address</label>
-        <input type="email" class="email">
-      </div>
-      <div class="captcha-box">
-        <input type="checkbox" id="captcha-check">
-        <label for="captcha-check">I am not a robot</label>
-        <img src="./images/recaptcha.png" alt="reCAPTCHA logo" class="captcha-logo">
-      </div>
-      <button class="create-button">Create an account</button>
-      <fieldset><legend><a href="#" class="login">OR LOGIN</a></legend></fieldset>
+        <img class="logo" src="./images/website_logo.png" alt="logo" height="50px" width="50px">
+        <h1>Healthy Bowl.com</h1>
+        <h2>Create an Account!</h2>
+        <!-- <button class="google-button">Sign up with Google</button> -->
+        <a class="google-btn" href="https://accounts.google.com/gsi/select?client_id=92879692782-7nd751eusg5fep81a1vhm0r6hf0pdn54.apps.googleusercontent.com&ux_mode=redirect&login_uri=https%3A%2F%2Fwww.codewithharry.com%2Fapi%2Fauth%2Fgooglelogin&ui_mode=card&as=bARcEli5JMufV%2FNTO56LRg&g_csrf_token=be230c1717b6ea4b&origin=https%3A%2F%2Fwww.codewithharry.com"><button class="google-btn"><img src="./images/google btn.png" alt="Google Logo" height="40px" width="200px"></button></a>        
+        <fieldset><legend>OR SIGN UP WITH EMAIL</legend></fieldset>
+        <form action="#" method="post" enctype="multipart/form-data"> 
+            <label for="email" class="label">Email Address</label>
+            <input type="email" class="email"><br>
+            <label for="password" class="label">Password</label><br>
+            <input type="password" class="password"><br>
+        
+            <div class="captcha">
+                <input type="checkbox" id="captcha-check">
+                <label for="captcha-check" class="captcha-label">I am not a robot</label>
+                <img src="./images/recaptcha.png" alt="reCAPTCHA logo" class="captcha-logo">
+            </div>
+            
+            <button class="create-button">Create an account</button>
+        </form>
+        <fieldset><legend><a href="#" class="login">OR LOGIN</a></legend></fieldset>
     </div>
   </div>
 </div>
