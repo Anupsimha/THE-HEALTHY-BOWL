@@ -462,6 +462,7 @@
   .subscription input{
     padding: 10px;
     width: 55%;
+    margin-left: 20px;
     height: 20px;
     border-radius: 10px;
     border: 1px solid black;
@@ -473,6 +474,7 @@
     box-sizing: border-box;
     border-radius: 10px;
     color: white;
+    margin-left: 20px;
     font-family: "Kanit", sans-serif;
     font-size: 16px;
     font-weight: 400;

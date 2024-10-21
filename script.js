@@ -182,10 +182,10 @@ modeIcon.addEventListener('click', function() {
 
     if (modeIcon.classList.contains('fa-moon')) {
         modeIcon.classList.remove('fa-moon');
-        modeIcon.classList.add('fa-sun');
+        modeIcon.classList.add('fa-regular fa-sun');
         modeIcon.title = "Enable Dark Mode"; // Update the tooltip text
       } else {
-        modeIcon.classList.remove('fa-sun');
+        modeIcon.classList.remove('fa-regular fa-sun');
         modeIcon.classList.add('fa-moon');
         modeIcon.title = "Enable Light Mode"; // Update the tooltip text
       }
