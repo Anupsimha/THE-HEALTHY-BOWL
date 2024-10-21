@@ -482,6 +482,11 @@ html body{
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 15px;
     cursor: pointer;
+    transition: 1.9s ease-in-out;
+}
+
+.featured_content > * > *:hover{
+    color: #ffffff;
 }
 
 .img_of_featured{
@@ -496,10 +501,16 @@ html body{
     position: relative;
     top: 0px;
     left: 5px;
+    color: rgba(255, 255, 255, 0.8);
     font-family: 'Barlow';
     font-style: italic;
     font-weight: 100;
     line-height: 0.0em;
+}
+
+.img_of_featured img{
+    height: 100%;
+    width: 100%;
 }
 
 /* MY RANKINGS AND GLOBAL RANKINGS */
@@ -543,6 +554,8 @@ html body{
 
 .button_past_my_contests button{
     padding: 10px;
+    position: relative;
+    top: 7px;
     border-radius: 8px;
     background-color: rgb(129, 128, 128);
     border: 0px;
@@ -564,5 +577,70 @@ html body{
     right: 28%;
     top: 3%;
 }
+
+/* PAST CONTESTS */
+
+.past_contests{
+    height: 88.5%;
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    top: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.past_contests > *{
+    border-radius: 10px;
+    width: 90%;
+    height: 150px;
+    transition: 1.5s ease-in;
+    cursor: pointer;
+}
+
+.past_contests > * > *:hover{
+    color: #54b8ff;
+}
+
+.past_contests >* button{
+    position: relative;
+    top: -101%;
+    left: 88%;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    color: purple;
+    padding: 7px 15px;
+    border-radius: 4px;
+    border: 0px;
+    outline: 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.past_con_img img{
+    position: relative;
+    top: 15px;
+    left: 40px;
+    border-radius: 10px;
+    height: 120px;
+    width: 180px;
+}
+
+.past_con_text{
+    position: relative;
+    left: 28%;
+    top: -66%;
+    line-height: 0.8em;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
 
 
