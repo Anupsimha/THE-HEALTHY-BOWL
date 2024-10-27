@@ -190,3 +190,12 @@ modeIcon.addEventListener('click', function() {
         modeIcon.title = "Enable Light Mode"; // Update the tooltip text
       }
   });
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// JavaScript for toggling the mobile menu
+document.getElementById('hamburger').addEventListener('click', function() {
+    const mobileNav = document.getElementById('mobileMenu');
+    mobileNav.classList.toggle('active');
+});
+
