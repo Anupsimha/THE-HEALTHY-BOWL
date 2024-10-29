@@ -1558,9 +1558,10 @@ footer{
     }
 }
 
-@media(min-width:480px) and (max-width : 768px){
+@media(max-width : 768px){
     .container{
         min-height: 560vh;
+        width: 778px;
     }
     
     /* NAVBAR SECTION */
@@ -1813,5 +1814,323 @@ footer{
     .members button{
         position: relative;
         left: 55px;
+    }
+
+    /* contact section */
+
+    .contact_us{
+        margin-top: -50px;
+    }
+    .contact_us h2{
+        font-size: 32px;
+    }
+    .right label{
+        font-size: 16px;
+    }
+    .right .name{
+        width: 420px;
+    }
+    .centre input{
+        width: 200px;
+    }
+    .right .msg{
+        width: 420px;
+    }
+    .right button{
+        margin-left: -35px;
+    }
+    .contact_us h4{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 426px) {
+    body{
+        width: 100%;
+    }
+    .container{
+        min-height: 560vh;  
+    }
+    
+    /* NAVBAR SECTION */
+    .navbar{
+        height: 16vh;
+        width: 100% ;
+    }
+
+    .web_logo img{
+        height: 40px;
+        width: 40px;
+        position: relative;
+        left: 20px;
+    }
+
+    .web_logo span{
+        position: relative;
+        left: 25px;
+        top: 5px;
+        font-size: 24px;
+    }
+
+    .nav_contents{
+        display: none;
+    }
+
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70px;
+        position: absolute;
+        right: 10vw;
+        top: 60%;
+        transform: scale(1.4);
+    }
+
+    .box_icon{
+        display: block; 
+    }
+
+    /* HOME PAGE SECTION */
+    .hero{
+        width: 90%;
+        margin-top: -40px;
+        margin-bottom: 60px;
+    }
+
+    .grid{
+        position: relative;
+        top: 15vh;
+        left: 17vw;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 90%;
+        gap: 5px;
+    }
+    
+    .item1 , .item2 , .item3 , .item4{
+        height: 200px;
+        width: 250px;
+    }
+
+    .item5 , .item6 , .item7{
+        display: none;
+    }
+    .caption {
+        margin-left: 170px;
+    }
+
+    /* HIGHLIGHTS */
+    .highlights{
+        height: 150px;
+        overflow-y: hidden;
+    }
+
+    .highlights > *{
+        height: 130px;
+        width: 160px;
+    }
+
+    .highlights > * p{
+        font-size: 25px;
+    }
+
+    /* RECIPES OF DAY SECTION */
+    .recipes_of_day{
+        margin-top: 40px;
+        width: 725px;
+    }
+
+    .recipes_of_day h2{
+        font-size: 1.3em;
+    }
+
+    .recipes_of_day p{
+        line-height: 1.1;
+        font-size: 0.9em;
+    }
+
+    .view_all_recipes{
+        position: absolute;
+        top: 25px;
+        right: 5px;
+    }
+
+    .recipes_of_the_day_list{
+        height: 50vh;
+    }
+
+    .img_of_rcp img{
+        position: relative;
+        top: -40px;
+        border-radius: 10px;
+        height: 200px;
+        width: 100%;
+    } 
+
+    .food{
+        font-size: 0.8em;
+    }
+
+    .detail_of_recipient{
+        position: relative;
+        top: -20px;
+    }
+
+    /* ADD YOUR RECIPE SECTION */
+    .add_your_recipe{
+        margin-top: -40px;
+        margin-bottom: 140px;
+    }
+
+    .add_your_recipe h2{
+        font-size: 1.3em;
+    }
+
+    .add_your_recipe p{
+        line-height: 1.1;
+        font-size: 0.9em;
+    }
+
+    .uploading_recipe_section{
+        width: 110%;
+    }
+
+    .uploading_recipe_section{
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+
+    .upload-section{
+        width: 50%;
+        position: absolute;
+        left: 10px;
+    }
+
+    .details_of_uploader{
+        width: 50%;
+        position: absolute;
+        right: 10px;
+    }
+
+    .upload-section h2{
+        position: relative;
+        left: 20px;
+    }
+
+    .upload-section form{
+        transform: scale(0.9);
+        position: relative;
+        top: 40px;
+        left: 10px;
+    }
+
+    /* CATERING SERVICES SECTION */
+    .catering_services{
+        margin-top: -40px;
+    }
+
+    .catering_services h2{
+        font-size: 28px;
+    }
+
+    .catering_main{
+        height: 80%;
+    }
+
+    .catering_main_img{
+        display: none;
+    }
+
+    .sub-catering_main{
+        width: 100%;
+    }
+
+    .sub-catering_main > *{
+        height: 45%;
+    }
+
+    /* REVIEWS SECTION */
+    .reviews_of_healthy_bowl h2{
+        font-size: 32px;
+    }   
+
+    /* ABOUT US SECTION */
+    .about_us{
+        margin-top: -40px;
+        margin-bottom: 100vh;
+    }
+
+    .about_us h2{
+        font-size: 32px;
+    }
+
+    .main_content_about{
+        width:100%;
+    }
+
+    .members{
+        width: 200px;
+        height: 230px;  
+        position: relative;
+        top: -80px;
+    }
+
+    .info_about_member{
+        overflow: hidden;
+        background-color: #ffffff;
+        height: 100px;
+    }
+
+    .img_of_member{
+        position: relative;
+        left: 55px;
+        margin-bottom: 10px;
+    }
+
+    .name_of_person{
+        margin-bottom: 100px;
+    }
+
+    .members button{
+        position: relative;
+        left: 55px;
+    }
+
+    /* CONTACT SECTION */
+    .contact_us{
+        margin-top: -50px;
+    }
+
+    .contact_us h2{
+        font-size: 32px;
+    }
+
+    .right label{
+        font-size: 16px;
+    }
+
+    .right .name{
+        width: 420px;
+    }
+
+    .centre input{
+        width: 200px;
+    }
+
+    .right .msg{
+        width: 420px;
+    }
+
+    .right button{
+        margin-left: -35px;
+    }
+
+    .contact_us h4{
+        font-size: 18px;
     }
 }
