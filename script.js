@@ -163,11 +163,13 @@ switchThemeButton.addEventListener('click', function() {
     if (isLightMode) {
         // Switch to dark mode
         stylesheet.setAttribute('href', './stylesheet.css');
-        switchThemeButton.setAttribute('class', 'fas fa-sun');
+        switchThemeButton.setAttribute('class', 'fa-solid fa-moon');
+        switchThemeButton.setAttribute('title', 'Switch to light mode');
     } else {
         // Switch to light mode
         stylesheet.setAttribute('href', './light_mode_stylesheet.css');
         switchThemeButton.setAttribute('class', 'fa-regular fa-moon');
+        switchThemeButton.setAttribute('title', 'Switch to dark mode');
     }
 
     isLightMode = !isLightMode;
@@ -175,18 +177,18 @@ switchThemeButton.addEventListener('click', function() {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let modeIcon = document.getElementById("icon");
-let container = document.getElementsByClassName("container")[0];
-modeIcon.addEventListener('click', function() {
-    container.classList.toggle('container_light');
+let isLightMode_local = localStorage.getItem('theme') === 'light';
 
-    if (modeIcon.classList.contains('fa-moon')) {
-        modeIcon.classList.remove('fa-moon');
-        modeIcon.classList.add('fa-regular fa-sun');
-        modeIcon.title = "Enable Dark Mode"; // Update the tooltip text
-      } else {
-        modeIcon.classList.remove('fa-regular fa-sun');
-        modeIcon.classList.add('fa-moon');
-        modeIcon.title = "Enable Light Mode"; // Update the tooltip text
-      }
-  });
+function applyTheme() {
+    if (isLightMode_local) {
+        stylesheet.setAttribute('href', './light_mode_stylesheet.css');
+        switchThemeButton.setAttribute('class', 'fa-regular fa-moon');
+        switchThemeButton.setAttribute('title', 'Switch to dark mode');
+    } else {
+        stylesheet.setAttribute('href', './stylesheet.css');
+        switchThemeButton.setAttribute('class', 'fa-solid fa-moon');
+        switchThemeButton.setAttribute('title', 'Switch to light mode');
+    }
+}
+
+applyTheme();

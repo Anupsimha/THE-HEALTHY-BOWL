@@ -13,7 +13,7 @@
     <div class="container">
         <nav class="navbar" id="nav_light">
             <div class="web_logo">
-                <img src="./images/website_logo.png" alt="logo">
+                <img src="./images/website_logo.png" alt="Healthy Bowl Logo">
                 <span class="web_title">Healthy Bowl</span>
             </div>
             <div class="nav_contents">
@@ -24,12 +24,17 @@
                 <button class="log_in" onclick="window.location.href='./login.html';">Log In</button>
             </div>
             <div class="search">
-                <!-- <i class="fa-solid fa-moon" id="icon" title="Enable Dark Mode"></i> -->
-                <i class="fa-regular fa-sun" id="switch-theme" title="Enable Dark Mode"></i>
                 <i class="fa-solid fa-magnifying-glass" title="Search"></i> 
-                <i class="fa-solid fa-bars box_icon" title="responsive"></i>
+                <i class="fa-regular fa-moon" id="switch-theme" title="Switch to light Mode"></i>
             </div>
-        </nav>
+            <div class="mobile-nav">
+                <a href="#home" class="active">Home</a>
+                <a href="#about" class="active">About</a>
+                <a href="#services" class="active">Services</a>
+                <a href="#contact" class="active">Contact</a>
+                <button class="log_in" onclick="window.location.href='./login.html';">Log In</button>
+            </div>
+        </nav>       
         <div class="hero mainpage" id="home">
             <div class="grid">
                 <div class="item1">
@@ -93,7 +98,7 @@
         <div class="recipes_of_day autoBlur mainpage">
             <h2>RECIPES OF THE DAY</h2>
             <p>Check out our featured recipe for today! This recipe is the most popular and trendy recipe that you’d definitely want to give a try!</p>
-            <span class="view_all_recipes">View All<i class="fa-solid fa-circle-arrow-right"></i></span>
+            <span class="view_all_recipes" style="cursor: pointer;" onclick="window.location.href='./recipes_of_the_day_files/index.html';">View All<i class="fa-solid fa-circle-arrow-right"></i></span>
             <div class="recipes_of_the_day_list">
                 <div class="name">
                     <div class="time_uploaded">
