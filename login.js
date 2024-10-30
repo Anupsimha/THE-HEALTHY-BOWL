@@ -32,22 +32,23 @@ loadSignupForm();
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-let toggleButton = document.getElementById('switch-theme');
-let stylesheet = document.getElementById('theme-stylesheet');
+const switchThemeButton = document.getElementById('switch-theme');
+const stylesheet = document.getElementById('theme-stylesheet');
 
 let isLightMode = false;
-console.log(toggleButton);
-console.log(stylesheet);
 
- toggleButton.addEventListener('click', function(){
-    if(isLightMode){
+switchThemeButton.addEventListener('click', function() {
+    if (isLightMode) {
+        // Switch to dark mode
         stylesheet.setAttribute('href', './login.css');
-        toggleButton.setAttribute('class', 'fas fa-sun');
-    }
-    else{
+        switchThemeButton.setAttribute('class', 'fa-solid fa-moon');
+        switchThemeButton.setAttribute('title', 'Switch to light mode');
+    } else {
+        // Switch to light mode
         stylesheet.setAttribute('href', './loginLight.css');
-        toggleButton.setAttribute('class', 'fa-regular fa-moon');
+        switchThemeButton.setAttribute('class', 'fa-regular fa-moon');
+        switchThemeButton.setAttribute('title', 'Switch to dark mode');
     }
 
     isLightMode = !isLightMode;
- });
+});

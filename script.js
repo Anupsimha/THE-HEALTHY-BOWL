@@ -177,10 +177,11 @@ switchThemeButton.addEventListener('click', function() {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let isLightMode_local = localStorage.getItem('theme') === 'light';
+let isLightMode1 = localStorage.getItem('theme') === 'light';
 
+// Apply saved theme preference on page load
 function applyTheme() {
-    if (isLightMode_local) {
+    if (isLightMode1) {
         stylesheet.setAttribute('href', './light_mode_stylesheet.css');
         switchThemeButton.setAttribute('class', 'fa-regular fa-moon');
         switchThemeButton.setAttribute('title', 'Switch to dark mode');
@@ -191,4 +192,15 @@ function applyTheme() {
     }
 }
 
+// Call applyTheme on page load
 applyTheme();
+
+switchThemeButton.addEventListener('click', function() {
+    isLightMode1 = !isLightMode1; // Toggle the theme mode
+
+    // Update local storage with the new theme mode
+    localStorage.setItem('theme', isLightMode1 ? 'light' : 'dark');
+
+    // Apply the new theme
+    applyTheme();
+});

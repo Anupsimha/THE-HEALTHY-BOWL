@@ -107,9 +107,14 @@ html body{
     color: white;
     border-radius: 5px;
     font-size: 16px;
-    background: rgba(182, 92, 212, 0.8);
+    background: rgba(52, 163, 18, 0.8);
     font-weight: 600;
     transition: 0.3s ease-in-out;
+}
+
+.log_in:hover{
+    background-color: rgba(52, 163, 18, 1);
+    transform: scale(1.05);
 }
 
 .nav_contents a:hover {
@@ -1517,7 +1522,8 @@ footer{
 }
 
 .icons >*:hover{
-    background-color: purple;
+    background-color: rgba(52, 163, 18, 1);
+    transform: scale(1.05);
 }
 
 .subscription{
@@ -1542,9 +1548,19 @@ footer{
     font-family: "Kanit", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    background-color: purple;
+    background-color: rgba(52, 163, 18, 0.8);
     cursor: pointer;
     border: 1px solid black;
+}
+
+.subscription button{
+    background-color: rgba(52, 163, 18, 1);
+    transition: 0.3s ease-in-out;
+}
+
+.subscription button:hover{
+    background-color: rgba(52, 163, 18, 1);
+    transform: scale(1.05);
 }
 
 .copyright{
