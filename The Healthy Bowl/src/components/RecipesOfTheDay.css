@@ -1,0 +1,168 @@
+.recipes_of_day{
+    position: absolute;
+    top: 133%;
+    left: 5%;
+    width: 90%;
+    height: 600px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 1.4;
+    margin-top: 50px;
+}
+
+.recipes_of_day h2{
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+}
+
+.autoBlur{
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+    animation-iteration-count: 1;
+}
+
+.view_all_recipes{
+    position: absolute;
+    right: 0px;
+    top: 48px;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s ease-in-out;
+    padding: 5px;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+.fa-circle-arrow-right{
+    position: relative;
+    left: 7px;
+}
+
+.view_all_recipes:hover{
+    background-color: rgba(253, 247, 255, 0.2);
+}
+
+.recipes_of_the_day_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.recipes_of_the_day_list > *{
+    height: 95%;
+    width: 250px;
+    margin-right: 60px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.8);
+    flex: 0 0 auto;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.time_uploaded{
+    position: relative;
+    top: -20px;
+    left: 205px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: rgba(255, 0, 0, 1);
+    height: 40px;
+    width: 80px;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.img_of_rcp img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: -40px;
+    z-index: 10;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 5px solid black;
+    margin-bottom: 10px;
+}
+
+.details_of_rcp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    color: rgb(49, 49, 49);
+    position: relative;
+    top: -50px;
+    font-family: "Kanit" , 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    /* font-style: normal; */
+}
+
+.name_of_dish{
+    position: relative;
+    top: -20px;
+    left: -25px;
+    height: 80px;
+    width: 75%;
+    text-wrap: nowrap;
+    font-size: 26px;
+}
+
+.food{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recipe_ranking{
+    color: white;
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    font-weight: 400;
+}
+
+.detail_of_recipient{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: -0px;
+}
+
+.detail_of_recipient img{
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    position: relative;
+    left: 10px;
+}
+
+.detail_of_recipient h5{
+    height: 50px;
+    width: 60%;
+    text-wrap: nowrap;
+    position: relative;
+    top: 10px;
+    right: 40px;
+}
+
+.recipient{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

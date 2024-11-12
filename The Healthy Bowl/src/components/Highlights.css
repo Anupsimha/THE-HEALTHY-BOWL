@@ -1,0 +1,208 @@
+/* HIGHLIGHTS */
+
+.highlights{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 120px;
+    left: 5%;
+    height: 200px;
+    width: 90%;
+    padding-bottom: 15px;
+    overflow-x: auto;
+}
+
+.cake_recipes{
+    height: 170px;
+    width: 200px;
+    background: url(../assets/images_1/cake_pudding.jpg);
+    opacity: 85%;
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.cake_recipes p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
+.soups{
+    height: 170px;
+    width: 200px;
+    background: url(../assets/images_1/soups.jpg);
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.soups p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
+.brocolli_recipes{
+    height: 170px;
+    width: 200px;
+    background: url(../assets/images_1/brocolli_recipes.jpg);
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.brocolli_recipes p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
+.frying_peaks{
+    height: 170px;
+    width: 200px;
+    background: url(../assets/images_1/frying_peaks.jpg);
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.frying_peaks p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
+.winter_skin_care{
+    height: 170px;
+    width: 200px;
+    background: url(../assets/images_1/winter_skin_care.jpg);
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.winter_skin_care p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
+.fruit_salad{
+    height: 170px;
+    width: 200px;
+    background: url(../assets/images_1/fruit_salad.jpg);
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.fruit_salad p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}   
+
+.vegetable_salad{
+    height: 170px;
+    width: 200px;
+    background: url(../assets/images_1/vegetable_salad.jpeg);     
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.vegetable_salad p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
+.deserts{
+    height: 170px;
+    width: 200px;
+    background: url(../assets/images_1/deserts.jpg);     
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.deserts p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
+.fast_foods{
+    height: 170px;
+    width: 200px;
+    background: url(../assets/images_1/fast_foods.jpg!w700wp);     
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.fast_foods p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
+.chats{
+    height: 170px;
+    width: 200px;
+    background: url(../assets/images_1/indian_chats.jpg);     
+    background-size: cover;
+    transform: rotate(-4deg);
+    transition: 0.2s ease-in-out;
+}
+
+.chats p{
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    text-shadow: 2px 2px 5px red, -1px -1px 2px rgb(30, 0, 255);
+}
+
+.highlights > *{
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    margin-right: 60px;
+    flex: 0 0 auto;
+    width: 240px;
+    outline: 2px solid #fff;
+}
+
+.highlights > *:hover{
+    transform: scale(1.025);
+}
